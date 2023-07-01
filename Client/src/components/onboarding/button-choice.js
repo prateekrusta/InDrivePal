@@ -7,8 +7,17 @@ const ButtonChoice = (props) => {
   return (
     <center>
       <div className="btn-choice">
-        <Checkbox {...label} defaultChecked color="default" />
-        <p>{props.label}</p>
+        <Checkbox
+          {...label}
+          defaultChecked
+          sx={{
+            color: "#A7E92F",
+            "&.Mui-checked": {
+              color: "#A7E92F",
+            },
+          }}
+        />
+        <p style={{fontWeight: 200}}>{props.label}</p>
       </div>
     </center>
   );
