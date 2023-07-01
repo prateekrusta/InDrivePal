@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import Login from './components/auth/login.js'
+import Login from './components/auth/login';
 import './App.css';
 
 function App() {

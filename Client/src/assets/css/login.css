@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.login-out{
+    position: relative;
+    top: 60vw;
+}
+
+.login-heading{
+    font-size: 100px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+.flag{
+    width: 150px;
+    height: 80px;
+}
