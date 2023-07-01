@@ -10,7 +10,6 @@
     flex-direction: row;
 }
 .btn-submit{
-    margin-top: 2px;
     border-radius: 1em;
     border: 1.015px solid rgba(167, 233, 47, 0.70);
     background-color: #A7E92F;

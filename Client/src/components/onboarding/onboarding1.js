@@ -57,17 +57,17 @@ const Onboarding1 = (props) => {
       </center>
       <center><div style={{marginTop:50}}>
       <div className="btn-choice">
-      <Radio {...controlProps('a')} color="default" />
+      <Radio {...controlProps('a')} color="#A7E92F" />
       <p>Yes</p>
       </div>
       <div className="btn-choice">
-      <Radio {...controlProps('b')} color="default" />
+      <Radio {...controlProps('b')} color="#A7E92F" />
       <p>No</p>
       </div>
       </div>
       </center>
-      <div style={{marginTop:200}}>
-      <ButtonSubmit label="Proceed" />
+      <div className="btn">
+      <center><ButtonSubmit label="Proceed" /></center>
       </div>
     </div>
   );

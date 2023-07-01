@@ -15,17 +15,17 @@ p {
 .icons{
   display: flex;
   flex-direction: row;
-  margin-top: 2vh;  
+  margin-top: 4vh;  
   justify-content: space-between; 
 }
 
 .arrow-back {
-  margin-left: 1vw;
+  margin-left: 2vw;
   align-self: flex-start;
 }
 
 .volume-icon {
-  margin-right: 1vw;
+  margin-right: 2vw;
   align-self: flex-end; 
 }
 
@@ -33,4 +33,11 @@ p {
   margin-left: 5vw;
   margin-right: 5vw;
   text-justify: inter-word;
+}
+
+.btn{
+  bottom: 0;
+  position: absolute;
+  align-self: center;
+  margin-bottom: 10px;
 }

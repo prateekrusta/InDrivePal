@@ -38,7 +38,7 @@ const Onboarding3 = () => {
           </div>
         )}</div>
         </div>
-      <center><img src={onboarding3} style={{marginTop:60}} /></center>
+      <center><img src={onboarding3} style={{marginTop:60, marginLeft:15}} /></center>
       <center>
         <p style={{fontSize:20}}>We store your personal data securely</p>
       </center>
@@ -46,8 +46,8 @@ const Onboarding3 = () => {
       <p style={{fontSize:14}} className="content3">To use the app, please allow us to collect info about other installed apps on your device and share it with our service providers.</p>
       <p style={{fontSize:14}} className="content3">This information will be used for fraud prevention and data analysis.</p>
       </center>
-      <div style={{marginTop:30}}>
-      <ButtonSubmit label="Allow" />
+      <div className="btn">
+      <center><ButtonSubmit label="Allow" /></center>
       </div>
     </div>
   );

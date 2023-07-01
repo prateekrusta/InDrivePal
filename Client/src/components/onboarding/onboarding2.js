@@ -47,8 +47,8 @@ const Onboarding2 = (props) => {
         <ButtonChoice label="Speech Impairment" />
         <ButtonChoice label="Locomotor Disability" />
       </div>
-      <div style={{ marginTop: 100 }}>
-        <ButtonSubmit label="Proceed with your PAL" />
+      <div className="btn">
+      <center><ButtonSubmit label="Proceed with your PAL" /></center>
       </div>
     </div>
   );
