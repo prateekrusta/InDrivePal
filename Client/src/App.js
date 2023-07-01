@@ -1,9 +1,9 @@
-import PassengerDriver from './components/onboarding/passenger-driver.js';
+import OnboardingName from './components/onboarding/onboarding-name.js';
 
 function App() {
   return (
     <div className="App">
-      <PassengerDriver />
+      <OnboardingName />
     </div>
   );
 }
