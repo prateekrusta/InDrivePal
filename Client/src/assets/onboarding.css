@@ -7,7 +7,25 @@ p {
   font-weight: 700;
   line-height: 36.54px;
 }
+
 .onboarding {
   display: flex;
   flex-direction: column;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;  
+  justify-content: space-between; 
+}
+
+.arrow-back {
+  margin-left: 1vw;
+  align-self: flex-start;
+}
+
+.volume-icon {
+  margin-right: 1vw;
+  align-self: flex-end; 
 }

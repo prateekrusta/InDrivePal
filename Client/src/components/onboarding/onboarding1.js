@@ -1,10 +1,26 @@
 import "../../assets/onboarding.css";
 import React, { useState } from "react";
 import ButtonSubmit from "./button-submit";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
+import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import Radio from '@mui/material/Radio';
+
 const Onboarding1 = (props) => {
 
   const [selectedValue, setSelectedValue] = useState('a');
+  const [showSoundOn, setShowSoundOn] = useState(true);
+  const [showSoundOff, setShowSoundOff] = useState(false);
+
+  const handleSoundOn = () => {
+    setShowSoundOn(false);
+    setShowSoundOff(true);
+  };
+
+  const handleSoundOff = () => {
+    setShowSoundOn(true);
+    setShowSoundOff(false);
+  };
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
@@ -20,6 +36,22 @@ const Onboarding1 = (props) => {
 
   return (
     <div className="onboarding">
+      <div className="icons">
+        <div className="arrow-back">
+          <ArrowBackIcon />
+        </div>
+        <div>
+        {showSoundOn && (
+          <div onClick={handleSoundOn} className="volume-icon">
+            <VolumeMuteIcon />
+          </div>
+        )}
+        {showSoundOff && (
+          <div onClick={handleSoundOff} className="volume-icon">
+            <VolumeOffIcon />
+          </div>
+        )}</div>
+        </div>
       <center>
         <p style={{fontSize:20, marginTop:100}}>Do you need specially abled features?</p>
       </center>
