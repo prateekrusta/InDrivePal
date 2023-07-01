@@ -1,9 +1,9 @@
-import Feature1 from './components/onboarding/feature1.js';
+import Feature2 from './components/onboarding/feature2.js';
 
 function App() {
   return (
     <div className="App">
-      <Feature1 />
+      <Feature2 />
     </div>
   );
 }
