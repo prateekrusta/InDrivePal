@@ -12,11 +12,11 @@ p {
   flex-direction: column;
 }
 
-.icons{
+.icons {
   display: flex;
   flex-direction: row;
-  margin-top: 4vh;  
-  justify-content: space-between; 
+  margin-top: 4vh;
+  justify-content: space-between;
 }
 
 .arrow-back {
@@ -26,18 +26,34 @@ p {
 
 .volume-icon {
   margin-right: 2vw;
-  align-self: flex-end; 
+  align-self: flex-end;
 }
 
-.content3{
+.content3 {
   margin-left: 5vw;
   margin-right: 5vw;
   text-justify: inter-word;
 }
 
-.btn{
+.btn {
   bottom: 0;
   position: absolute;
   align-self: center;
   margin-bottom: 10px;
+}
+
+.back {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4vh;
+  margin-left: 2vw;
+}
+
+.back h3 {
+  margin-left: 2px; 
+}
+
+h3{
+  color: #323844;
 }

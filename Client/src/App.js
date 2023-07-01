@@ -1,11 +1,12 @@
-import Onboarding2 from './components/onboarding/onboarding2.js';
+import PassengerDriver from './components/onboarding/passenger-driver.js';
 
 function App() {
   return (
     <div className="App">
-      <Onboarding2 />
+      <PassengerDriver />
     </div>
   );
 }
+
 
 export default App;

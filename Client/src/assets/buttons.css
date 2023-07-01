@@ -12,7 +12,7 @@
 }
 .btn-submit{
     border-radius: 1em;
-    border: 1.015px solid rgba(167, 233, 47, 0.70);
     background-color: #A7E92F;
     width: 80vw;
+    padding: 1%;
 }
