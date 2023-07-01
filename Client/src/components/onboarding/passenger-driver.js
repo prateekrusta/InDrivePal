@@ -6,7 +6,7 @@ import passengerdriver from '../../assets/images/passenger.png';
 const PassengerDriver = () => {
   return (
     <div className="onboarding">
-    <div className="back"><ArrowBackIosIcon /><h3>Back</h3></div>
+    <div className="back"><ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3></div>
       <center>
         <p style={{fontSize:20, marginTop: 50}}>Are you a passenger or a driver?</p>
         <p style={{color:"grey", fontWeight:100}}>You can change the mode later</p>
