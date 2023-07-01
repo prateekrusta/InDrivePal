@@ -56,4 +56,35 @@ p {
 
 h3{
   color: grey;
+  font-weight: 600;
+}
+
+.base-icons{
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.circle {
+  position: relative;
+  margin-right: 5%;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #A7E92F;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.arrow-icon {
+  position: relative;
+  z-index: 1;
 }

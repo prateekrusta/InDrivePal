@@ -10,9 +10,11 @@
     font-weight: 200;
     flex-direction: row;
 }
+
 .btn-submit{
     border-radius: 1em;
     background-color: #A7E92F;
     width: 80vw;
     padding: 1%;
 }
+

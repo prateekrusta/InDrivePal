@@ -1,9 +1,9 @@
-import OnboardingName from './components/onboarding/onboarding-name.js';
+import Feature1 from './components/onboarding/feature1.js';
 
 function App() {
   return (
     <div className="App">
-      <OnboardingName />
+      <Feature1 />
     </div>
   );
 }
