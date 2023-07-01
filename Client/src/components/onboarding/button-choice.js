@@ -1,12 +1,17 @@
 import "../../assets/buttons.css";
-const Button = (props) => {
+import Checkbox from "@mui/material/Checkbox";
+
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
+const ButtonChoice = (props) => {
   return (
     <center>
       <div className="btn-choice">
-      <p>{props.label}</p>
+        <Checkbox {...label} defaultChecked color="default" />
+        <p>{props.label}</p>
       </div>
     </center>
   );
 };
 
-export default Button;
+export default ButtonChoice;

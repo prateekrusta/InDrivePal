@@ -1,14 +1,9 @@
-import Login from './components/auth/login.js'
-import './App.css';
-import Button from './components/onboarding/button-choice'
-import ButtonSubmit from './components/onboarding/button-submit'
+import Onboarding1 from './components/onboarding/onboarding1.js';
 
 function App() {
   return (
     <div className="App">
-      <Login />
-      <Button label="Choice" />
-      <ButtonSubmit label="Hello" />
+      <Onboarding1 />
     </div>
   );
 }
