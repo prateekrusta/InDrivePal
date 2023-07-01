@@ -18,7 +18,7 @@ const Feature4 = () => {
           InDrive takes utmost care of your safety. We leave no stone unturned
           to assure a safe and comfortable ride for you.
         </p>
-        <img src={feature3} />
+        <img src={feature4} />
       </center>
       <div
         className="base-icons"
