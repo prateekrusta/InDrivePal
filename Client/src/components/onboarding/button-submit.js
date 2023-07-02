@@ -1,4 +1,4 @@
-import "../../assets/buttons.css";
+import "../../assets/css/buttons.css";
 const ButtonSubmit = (props) => {
   return (
     <center>

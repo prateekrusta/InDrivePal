@@ -1,4 +1,4 @@
-import "../../assets/onboarding.css";
+import "../../assets/css/onboarding.css";
 import React, { useState } from "react";
 import ButtonSubmit from "./button-submit";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";

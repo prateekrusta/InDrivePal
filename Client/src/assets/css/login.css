@@ -2,7 +2,7 @@
 
 .login-out{
     position: relative;
-    top: 80vw;
+    top: 76vw;
     padding: 0 50px;
 }
 
@@ -27,7 +27,8 @@
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 20px;
-    padding: 10px 0;
+    padding: 15px 0;
+    margin-bottom: 1vh;
 }
 
 input[type=tel]{
@@ -68,10 +69,17 @@ input[type=tel]:focus{
 }
 
 .disclaimer{
-    margin-top: 27vh;
+    margin-top: 24vh;
     position: relative;
     bottom: 0;
 }
 .disclaimer p{
     font-size: 15px;
+    
+}
+
+.new-user-signup-message{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; 
+    letter-spacing: 1px;
 }

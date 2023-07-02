@@ -4,7 +4,7 @@ import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import ButtonChoice from './button-choice';
 import ButtonSubmit from './button-submit';
-import '../../assets/onboarding.css';
+import '../../assets/css/onboarding.css';
 
 const Onboarding2 = () => {
   const [showSoundOn, setShowSoundOn] = useState(true);

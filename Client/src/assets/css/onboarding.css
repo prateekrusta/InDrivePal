@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-p {
-  color: #323844;
+.onboarding p {
+  color: black;
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
+  letter-spacing: 1px;
   font-weight: 700;
 }
 
@@ -15,12 +15,12 @@ p {
 .icons {
   display: flex;
   flex-direction: row;
-  margin-top: 4vh;
+  margin-top: 3vh;
   justify-content: space-between;
 }
 
 .arrow-back {
-  margin-left: 2vw;
+  margin-left: 5vw;
   align-self: flex-start;
 }
 
@@ -87,4 +87,51 @@ h3{
 .arrow-icon {
   position: relative;
   z-index: 1;
+}
+
+.welcome-out{
+  position: relative;
+  top: 54vw;
+}
+
+.welcome-heading{
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2vh;
+}
+
+.welcome-heading small{
+  font-weight: 100;
+  font-size: 18px;
+}
+
+input[type=text]{
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid rgb(154, 153, 153);
+  width: 75vw;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 500;
+  height: 50px;
+}
+
+input[type=text]:focus{
+  outline: none;
+}
+
+::placeholder{
+  position: relative;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.btn-height{
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 15px 0;
+  margin-bottom: 1vh;
 }

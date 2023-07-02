@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonSubmit from "./button-submit";
-import "../../assets/onboarding.css";
+import "../../assets/css/onboarding.css";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import passengerdriver from '../../assets/images/passenger.png';
 const PassengerDriver = () => {

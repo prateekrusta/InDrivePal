@@ -4,7 +4,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import onboarding3 from '../../assets/images/onboarding3.png';
-import "../../assets/onboarding.css";
+import "../../assets/css/onboarding.css";
 
 const Onboarding3 = () => {
   const [showSoundOn, setShowSoundOn] = useState(true);

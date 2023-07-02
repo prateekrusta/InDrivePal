@@ -9,7 +9,7 @@ const Login = () => {
     return (
       <div className="login-out">
         <div className="login-heading">
-            Sign in via phone number 
+            Join us via phone number 
         </div>
 
         <div className="input-phone-number">
@@ -33,12 +33,6 @@ const Login = () => {
         <button className="btn-submit btn-height">
         Next
         </button>
-
-        <div className="new-user-signup-message">
-            <p>
-                New User? <><b>Create new account</b></>.
-            </p>
-        </div>
 
         <div className="disclaimer">
             <p>

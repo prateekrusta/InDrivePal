@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonSubmit from "./button-submit";
 import locationicon from '../../assets/images/loc-check.png';
-import "../../assets/onboarding.css";
+import "../../assets/css/onboarding.css";
 
 const LocationCheck = () => {
   return (
