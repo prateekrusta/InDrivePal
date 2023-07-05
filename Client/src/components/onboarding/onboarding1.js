@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import "../../assets/css/onboarding.css";
 import React, { useState } from "react";
 import ButtonSubmit from "./button-submit";
@@ -86,9 +87,11 @@ const Onboarding1 = (props) => {
         </div>
       </center>
       <div className="btn">
-        <center>
-          <ButtonSubmit label="Proceed" />
-        </center>
+        <NavLink to="/onboarding/page-2">
+          <center>
+            <ButtonSubmit label="Proceed" />
+          </center>
+        </NavLink>
       </div>
     </div>
   );

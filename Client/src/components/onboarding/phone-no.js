@@ -1,4 +1,5 @@
 import Grid from "@material-ui/core/Grid"
+import { NavLink } from 'react-router-dom';
 import ReactDOM from "react-dom";
 import indianflag from '../../assets/logos/indiaflag.webp';
 import '../../assets/css/login.css';
@@ -31,7 +32,9 @@ const Login = () => {
         </div>
 
         <button className="btn-submit btn-height">
+        <NavLink to="/onboarding/page-5">
         Next
+        </NavLink>
         </button>
 
         <div className="disclaimer">

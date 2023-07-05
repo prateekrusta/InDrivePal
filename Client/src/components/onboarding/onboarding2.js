@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import React, { useState } from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
@@ -48,7 +49,9 @@ const Onboarding2 = () => {
         <ButtonChoice label="Locomotor Disability" />
       </div>
       <div className="btn">
-      <center><ButtonSubmit label="Proceed with your PAL" /></center>
+        <NavLink to="/onboarding/page-3">
+          <center><ButtonSubmit label="Proceed with your PAL" /></center>
+        </NavLink>
       </div>
     </div>
   );

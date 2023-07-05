@@ -1,4 +1,4 @@
-import "../../assets/buttons.css";
+import "../../assets/css/buttons.css";
 import Checkbox from "@mui/material/Checkbox";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };

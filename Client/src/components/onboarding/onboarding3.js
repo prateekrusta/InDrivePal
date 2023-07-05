@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import React, { useState } from "react";
 import ButtonSubmit from "./button-submit";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -47,7 +48,9 @@ const Onboarding3 = () => {
       <p style={{fontSize:14}} className="content3">This information will be used for fraud prevention and data analysis.</p>
       </center>
       <div className="btn">
-      <center><ButtonSubmit label="Allow" /></center>
+        <NavLink to="/onboarding/page-4">
+          <center><ButtonSubmit label="Allow" /></center>
+        </NavLink>
       </div>
     </div>
   );

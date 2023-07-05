@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import React from "react";
 import ButtonSubmit from "./button-submit";
 import locationicon from '../../assets/images/loc-check.png';
@@ -12,7 +13,9 @@ const LocationCheck = () => {
       <center><img src={locationicon} style={{marginTop:200, width:200}} /></center>
       <center><p style={{color:'#00C4FF'}}>Edit</p></center>
       <div className="btn">
-      <center><ButtonSubmit label="Allow" /></center>
+        <NavLink to="/onboarding/page-6">
+        <center><ButtonSubmit label="Allow" /></center>
+        </NavLink>
       </div>
     </div>
   );

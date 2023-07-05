@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Grid from "@material-ui/core/Grid"
 import ReactDOM from "react-dom";
 import indianflag from '../../assets/logos/indiaflag.webp';
@@ -36,7 +37,7 @@ const Login = () => {
 
         <div className="new-user-signup-message">
             <p>
-                New User? <><b>Create new account</b></>.
+                New User? <NavLink to="/onboarding/page-1"><b>Create new account</b></NavLink>.
             </p>
         </div>
 

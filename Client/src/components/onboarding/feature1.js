@@ -1,7 +1,7 @@
-import React from "react";
+import { NavLink } from 'react-router-dom';
 import feature1 from "../../assets/images/feature1.png";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import "../../assets/onboarding.css";
+import "../../assets/css/onboarding.css";
 
 const Feature1 = () => {
   return (
@@ -12,8 +12,10 @@ const Feature1 = () => {
         <img src={feature1} />
       </center>
       <div className="base-icons" style={{ display: 'flex', alignItems: 'center' }}>
-        <h3 style={{marginLeft:10}}>Skip</h3>
-        <div className="circle"><ArrowForwardIosIcon className="arrow-icon" /></div>
+        <NavLink to="/login"><h3 style={{marginLeft:10}}>Skip</h3></NavLink>
+        <div className="circle">
+        <NavLink to="/info-2"><ArrowForwardIosIcon className="arrow-icon" /></NavLink>
+        </div>
       </div>
     </div>
   );
