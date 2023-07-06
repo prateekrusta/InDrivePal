@@ -6,7 +6,6 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import VolumeMuteIcon from "@mui/icons-material/VolumeMute";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import Radio from "@mui/material/Radio";
-import Driver from '../ride/driver';
 
 const Onboarding1 = (props) => {
   const [selectedValue, setSelectedValue] = useState("a");
@@ -87,7 +86,6 @@ const Onboarding1 = (props) => {
           </div>
         </div>
       </center>
-      <Driver />
       <div className="btn">
         <NavLink to="/onboarding/page-2">
           <center>
