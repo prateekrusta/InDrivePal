@@ -19,7 +19,7 @@ const Feature2 = () => {
           With enhanced accessibilty voice-prompts, equipped vehicles, AI chat
           assistance, we make sure everyone’s travel requirements are fulfilled.
         </p>
-        <img src={feature2} style={{width:'40vw'}} />
+        <img src={feature2} style={{width:'80vw'}} />
       </center>
       <div
         className="base-icons"
