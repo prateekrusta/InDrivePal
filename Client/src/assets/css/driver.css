@@ -10,6 +10,9 @@
   .driver-data {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 15px;
+    top: -4px;
   }
   
   .rating {
@@ -19,7 +22,7 @@
   }
   
   .driver-icon {
-    margin-left: 10vw;
+    margin-left: 8vw;
     padding: 1vw;
     display: flex;
     flex-direction: row;
@@ -37,10 +40,13 @@
     margin: 1vw;
   }
   
-  img {
+  .driver img {
     width: 20vw;
-    height: 10vh;
+    height: 8.5vh;
     border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left: 10px;
   }
   
   .driver-data h3 {
@@ -51,4 +57,3 @@
   .driver-data h4 {
     margin-left: 1vw;
   }
-  

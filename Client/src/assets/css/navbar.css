@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.outer-navbar{
+    overflow: hidden;
+    position: absolute;
+}
+
+.appbar{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.toolbar{
+    color: black;
+    background-color: white;
+}
+
+.text-link{
+    position: relative;
+    left: -10px;
+}
+
+.bottom-divider{
+    position: relative;
+    top: 23.5vh;
+}
+
+.btn-driver-mode{
+    position: relative;
+    top: 20px;
+    border-radius: 1em;
+    border: 1.015px solid rgba(167, 233, 47, 0.70);
+    background-color: #A7E92F;
+    width: 50vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.drawheader{
+    margin-bottom: 3vh;
+}
+
+.user-handle{
+    position: relative;
+    top: 13px;
+    left: 5px;
+}
+
+.main-name{
+    text-align: left;
+    position: relative;
+    left: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name-title{
+    text-align: left;
+    position: relative;
+    left: 5px;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+.userAvatar{
+    transform: scale(1.8);
+    position: relative;
+    top: 10px;
+}
+
+.closerbutton{
+    position: relative;
+    top: 15px;
+}

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 import RootLayout from './layout/RootLayout.js';
 
@@ -14,6 +14,10 @@ import Onboarding4 from "./components/onboarding/phone-no.js";
 import Onboarding5 from "./components/onboarding/locationCheck.js";
 import Onboarding6 from "./components/onboarding/welcome.js";
 
+import Driver from './components/ride/driver.js';
+import Navbar from './components/ride/navbar.js';
+import Bookride from './components/ride/book-ride.js'
+
 import Login from './components/auth/login.js';
 import './App.css';
 
@@ -21,7 +25,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <main>
           <Routes path="/" >
               <Route index path="/" element={<Feature1 />} />
@@ -44,7 +48,8 @@ function App() {
             </Route>
           </Routes>
         </main>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Bookride />
     </div>
   );
 }
