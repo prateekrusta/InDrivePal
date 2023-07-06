@@ -15,7 +15,7 @@ import Onboarding5 from "./components/onboarding/locationCheck.js";
 import Onboarding6 from "./components/onboarding/welcome.js";
 
 import Login from './components/auth/login.js';
-import './App.css';
+import './assets/css/App.css';
 
 
 function App() {
