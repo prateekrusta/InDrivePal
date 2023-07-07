@@ -1,0 +1,95 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-out{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.book-ride-outer .map iframe{
+    border:0;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ride-logos{
+    width: 70px;
+    height: 40px;
+}
+
+.ride-logos123{
+    width: 73px;
+    position: relative;
+}
+
+.input-form{
+    background-color: #ffffff !important;
+    z-index: 100;
+    padding: 40px 0px;
+    border-radius: 30px 30px 0 0;
+    position: absolute;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.mainForm{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mainForm input[type=text]{
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(154, 153, 153);
+    width: 75vw;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    height: 40px;
+    position: relative;
+    left: -10px;
+}
+
+.mainForm input[type=number]{
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(154, 153, 153);
+    width: 75vw;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    height: 40px;
+    position: relative;
+    left: -10px;
+}
+
+.mainForm [type=text]:focus{
+    outline: none;
+}
+
+.mainForm [type=number]:focus{
+    outline: none;
+}
+
+.book-ride-icons{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.vehicle-icons{
+    padding: 0px 15px;
+}
+
+.vehicle-container{
+    border-radius: 20px;
+}
+
+.vehicle-container:hover{
+background-color: #e2f4ff;
+}

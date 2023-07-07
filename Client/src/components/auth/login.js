@@ -24,7 +24,7 @@ const Login = () => {
                 <Grid item xs={10}>
                     <div className="input-phone-number-right">
                         <span> +91 </span>
-                        <input type="tel" placeholder="Enter your phone no."  maxLength="10" minLength="10" required></input>
+                        <input type="tel" placeholder="Enter your phone no." maxLength="10" minLength="10" required></input>
                     </div>
                 </Grid>
             </Grid>

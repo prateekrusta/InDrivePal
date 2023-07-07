@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 .outer-navbar{
-    overflow: hidden;
-    position: absolute;
+    overflow: hidden !important;
 }
 
 .appbar{
-    background-color: transparent;
-    box-shadow: none;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
 .toolbar{
-    color: black;
-    background-color: white;
+    color: black !important;
+    background-color: white !important;
+}
+
+.toolbar:hover{
+    background-color: rgb(234, 231, 231) !important;
 }
 
 .text-link{
@@ -31,7 +34,7 @@
     border-radius: 1em;
     border: 1.015px solid rgba(167, 233, 47, 0.70);
     background-color: #A7E92F;
-    width: 50vw;
+    width: 80vw;
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 18px;

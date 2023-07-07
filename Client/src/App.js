@@ -27,7 +27,7 @@ import EmergencyAddContacts from "./components/onboarding/emergency-add-contact.
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <main>
           <Routes path="/" >
               <Route index path="/" element={<Feature1 />} />
@@ -50,7 +50,7 @@ function App() {
             </Route>
           </Routes>
         </main>
-      </BrowserRouter>
+      </BrowserRouter> */}
       <Bookride />
     </div>
   );

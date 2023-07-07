@@ -26,29 +26,9 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import MessageIcon from '@mui/icons-material/Message';
 import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import CloseIcon from '@mui/icons-material/Close';
 import '../../assets/css/navbar.css';
 
-const drawerWidth = 390;
-
-const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
-  ({ theme, open }) => ({
-    flexGrow: 1,
-    padding: theme.spacing(3),
-    transition: theme.transitions.create('margin', {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    marginLeft: `-${drawerWidth}px`,
-    ...(open && {
-      transition: theme.transitions.create('margin', {
-        easing: theme.transitions.easing.easeOut,
-        duration: theme.transitions.duration.enteringScreen,
-      }),
-      marginLeft: 0,
-    }),
-  }),
-);
+const drawerWidth = 380;
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== 'open',
@@ -89,7 +69,7 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
-    <Box sx={{ display: 'flex' }} className="outer-navbar">
+    <Box sx={{ display: 'flex' }}>
       <CssBaseline />
 
       <AppBar position="fixed" open={open} className='appbar'>
@@ -107,7 +87,7 @@ export default function PersistentDrawerLeft() {
         </Toolbar>
       </AppBar>
 
-      <Drawer
+      <Drawer className="outer-navbar"
         sx={{
           width: drawerWidth,
           flexShrink: 0,
@@ -175,10 +155,7 @@ export default function PersistentDrawerLeft() {
             <button className='btn-driver-mode'>Driver Mode</button>
         </div>
       </Drawer>
-      <Main open={open}>
         <DrawerHeader />
-
-      </Main>
     </Box>
   );
 }
