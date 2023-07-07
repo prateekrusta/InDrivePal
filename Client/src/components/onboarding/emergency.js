@@ -1,16 +1,15 @@
 import { NavLink } from 'react-router-dom';
 import React from "react";
 import ButtonSubmit from "./button-submit";
-import "../../assets/css/onboarding.css";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import "../../assets/css/emergency.css";
 const EmergencyContacts = () => {
   return (
-    <div className="onboarding">
+    <div style={{display:'flex', flexDirection:'column'}}>
     <div className="icons-top">
-    <div className="back"><ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3></div>
-    <div className="forward"><h3>Skip</h3><ArrowForwardIosIcon style={{color: 'grey'}} /></div>
+    <div className="back-icons"><ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3></div>
+    <div className="forward-icons"><h3>Skip</h3><ArrowForwardIosIcon style={{color: 'grey'}} /></div>
     </div>
       <center>
         <p className="emergency-heading">Add emergency contacts</p>

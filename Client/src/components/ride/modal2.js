@@ -1,7 +1,6 @@
 import React from "react";
 import driver from "../../assets/images/driver.jpeg";
 import "../../assets/css/modal2.css";
-import "../../assets/css/onboarding.css";
 import ButtonSubmit from "../onboarding/button-submit";
 
 const Modal = () => {
