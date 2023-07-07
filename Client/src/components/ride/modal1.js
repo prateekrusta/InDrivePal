@@ -37,7 +37,7 @@ const MyModal = () => {
                 <div>
                     <h3 style={{ textAlign: 'left' }}>Now you pick the driver</h3>
                     <p style={{ textAlign: 'left' }}>
-                        You will be recieving offers from drivers, including offers at your fare. To proceed withthe ride, you need to accept one of the suggestions.
+                    You will be recieving offers from drivers, including offers at your fare. To proceed withthe ride, you need to accept one of the suggestions.
                     </p>
                 </div>
                 <div >

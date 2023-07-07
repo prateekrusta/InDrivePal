@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import React, {useState} from "react";
+import React, {useRef} from "react";
 import ButtonSubmit from "./button-submit";
 import Grid from "@material-ui/core/Grid"
 import '../../assets/css/otp.css';
@@ -7,16 +7,37 @@ import indianflag from '../../assets/logos/indiaflag.webp';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import "../../assets/css/emergency.css";
 import MyModal from '../ride/modal1';
+import uploadImage from '../../assets/images/imageUpload.png';
 
 const EmergencyAddContacts = () => {
-  const [submitted, isSubmitted] = useState(false)
+  const inputFileRef = useRef(null);
+
+  const handlePhotoClick = () => {
+    inputFileRef.current.click();
+  };
+
+  const handleFileUpload = (event) => {
+    const file = event.target.files[0];
+    // Do something with the file
+  };
   return (
     <div className="onboarding">
     <div className="back"><ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3></div>
       <center>
         <p className="emergency-heading">Add contact</p>
       </center>
-      {/* Image upload */}
+      <center>
+      <div className="photo-container">
+          <img src={uploadImage} className="photo-image" alt="Upload" onClick={handlePhotoClick} style={{width:200}} />
+          <input
+            type="file"
+            accept="image/*"
+            ref={inputFileRef}
+            style={{ display: 'none' }}
+            onChange={handleFileUpload}
+          />
+        </div>
+      </center>
       <div className="input-phone-number">
             <Grid container spacing={1}>
             <Grid item xs={12}>
