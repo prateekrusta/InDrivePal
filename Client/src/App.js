@@ -25,6 +25,8 @@ import ListEmergencyContacts from "./components/onboarding/list-emergency-contac
 import EmergencyAddContacts from "./components/onboarding/emergency-add-contact.js";
 import Modal from "./components/ride/modal2.js";
 import EmergencyContacts from "./components/onboarding/emergency.js";
+import FindDriver from "./components/ride/find-driver.js";
+
 function App() {
   return (
     <div className="App">
@@ -44,7 +46,7 @@ function App() {
               <Route index path="page-1" element={<Onboarding1 />} />
               <Route path="page-2" element={<Onboarding2 />} />
               <Route path="page-3" element={<Onboarding3 />} />
-              <Route path="page-4" element={<Otp />} />
+              <Route path="page-4" element={<FindDriver />} />
               <Route path="page-5" element={<Onboarding5 />} />
               <Route path="page-6" element={<Onboarding6 />} />
 
