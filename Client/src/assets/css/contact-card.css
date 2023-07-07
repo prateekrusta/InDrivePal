@@ -1,0 +1,42 @@
+.contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+    margin: 10px;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-icon {
+    font-size: 36px;
+    color: #A7E92F;
+    margin-right: 10px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .contact-mobile {
+    color: #888888;
+    font-size: 14px;
+  }
+  
+  .remove-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

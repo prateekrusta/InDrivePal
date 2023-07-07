@@ -21,7 +21,7 @@ import Bookride from './components/ride/book-ride.js'
 import Login from './components/auth/login.js';
 import './App.css';
 import Otp from "./components/onboarding/otp.js";
-import EmergencyAddContacts from "./components/onboarding/emergency-add-contact.js";
+import ListEmergencyContacts from "./components/onboarding/list-emergency-contact.js";
 
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
               <Route index path="page-1" element={<Onboarding1 />} />
               <Route path="page-2" element={<Onboarding2 />} />
               <Route path="page-3" element={<Onboarding3 />} />
-              <Route path="page-4" element={<EmergencyAddContacts />} />
+              <Route path="page-4" element={<ListEmergencyContacts />} />
               <Route path="page-5" element={<Onboarding5 />} />
               <Route path="page-6" element={<Onboarding6 />} />
 
