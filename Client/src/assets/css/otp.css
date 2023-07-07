@@ -23,7 +23,6 @@
     margin-bottom: 3vh;
 }
 
-<<<<<<< HEAD
 .btn-height{
     font-weight: 500;
     letter-spacing: 1px;
@@ -33,9 +32,6 @@
 }
 
 .input-phone-number input[type=tel]{
-=======
-input[type=tel]{
->>>>>>> ba35a400afc89c9fb9074e58d3dd86d6927b755e
     font-size: 16px;
     border: none;
     border-bottom: 2px solid rgb(154, 153, 153);

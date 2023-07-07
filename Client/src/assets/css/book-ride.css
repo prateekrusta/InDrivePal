@@ -80,6 +80,7 @@ body{
     position: relative;
     top: 10px;
     left: 10px;
+    color: gray;
 }
 
 .vehicle-icons{
@@ -88,8 +89,45 @@ body{
 
 .vehicle-container{
     border-radius: 20px;
+    position: relative;
 }
 
 .vehicle-container:hover{
 background-color: #e2f4ff;
+}
+
+.info-icons{
+    opacity: 0;
+    position: absolute;
+    top: -7px;
+    right: -9px;
+}
+
+.vcc-1:hover .info-icons-1{
+    opacity: 0.6;
+}
+.vcc-2:hover .info-icons-2{
+    opacity: 0.6;
+}
+.vcc-3:hover .info-icons-3{
+    opacity: 0.6;
+}
+.vcc-4:hover .info-icons-4{
+    opacity: 0.6;
+}
+
+.mainForm label{
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    font-size: 15px;
+    color: #767676;
+    position: relative;
+    left: -14px;
+    top: 5px;
+}
+
+.switcher{
+    position: relative;
+    top: 3px;
 }
