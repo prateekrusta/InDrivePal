@@ -16,3 +16,10 @@
     background-color: #A7E92F;
     width: 80vw;
 }
+.btn-cc{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 1vw;
+    border-radius: 1em;
+    width: 80vw;   
+}

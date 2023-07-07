@@ -20,12 +20,14 @@ import Bookride from './components/ride/book-ride.js'
 
 import Login from './components/auth/login.js';
 import './App.css';
+import Otp from "./components/onboarding/otp.js";
+import EmergencyAddContacts from "./components/onboarding/emergency-add-contact.js";
 
 
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <main>
           <Routes path="/" >
               <Route index path="/" element={<Feature1 />} />
@@ -41,14 +43,14 @@ function App() {
               <Route index path="page-1" element={<Onboarding1 />} />
               <Route path="page-2" element={<Onboarding2 />} />
               <Route path="page-3" element={<Onboarding3 />} />
-              <Route path="page-4" element={<Onboarding4 />} />
+              <Route path="page-4" element={<EmergencyAddContacts />} />
               <Route path="page-5" element={<Onboarding5 />} />
               <Route path="page-6" element={<Onboarding6 />} />
 
             </Route>
           </Routes>
         </main>
-      </BrowserRouter> */}
+      </BrowserRouter>
       <Bookride />
     </div>
   );

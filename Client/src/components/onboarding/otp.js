@@ -1,52 +1,46 @@
-import { NavLink } from 'react-router-dom';
 import Grid from "@material-ui/core/Grid"
-import ReactDOM from "react-dom";
+import { NavLink } from 'react-router-dom';
+import '../../assets/css/otp.css';
 import indianflag from '../../assets/logos/indiaflag.webp';
-import '../../assets/css/login.css';
-import '../../assets/css/buttons.css';
 
-const Login = () => {
+const Otp = () => {
 
     return (
       <div className="login-out">
         <div className="login-heading">
-            Sign in via phone number 
+            We sent you a code
         </div>
 
         <div className="input-phone-number">
             <Grid container spacing={1}>
-                <Grid item xs={2}>
+            <Grid item xs={2}>
                     <div className="input-phone-number-left">
                         <img src={indianflag} className="flag"></img>
                     </div>
                 </Grid>
-
                 <Grid item xs={10}>
                     <div className="input-phone-number-right">
                         <span> +91 </span>
-                        <input type="tel" placeholder="Enter your phone no."  maxLength="10" minLength="10" required></input>
+                        <input type="tel" placeholder="Enter your phone no." maxLength="10" minLength="10" required></input>
+                    </div>
+                </Grid>
+                <Grid item xs={10}>
+                    <div className="input-phone-number-right">
+                        <input type="text" maxLength="4" minLength="4" placeholder="4 digit code" required></input>
                     </div>
                 </Grid>
             </Grid>
+            <center> <p className="retry">Retry log in after 60 seconds</p></center>
         </div>
 
-        <button className="btn-submit btn-height">
-        Next
-        </button>
 
-        <div className="new-user-signup-message">
-            <p>
-                New User? <NavLink to="/onboarding/page-1"><b>Create new account</b></NavLink>.
-            </p>
-        </div>
-
-        <div className="disclaimer">
+        {/* <div className="disclaimer">
             <p>
                 By tapping <b>"Next"</b>, You agree to <u>Terms and Conditions</u> and <u>Privacy Policy</u>
             </p>
-        </div>
+        </div> */}
       </div>
     );
   };
   
-  export default Login;
+  export default Otp;

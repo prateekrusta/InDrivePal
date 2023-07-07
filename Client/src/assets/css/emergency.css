@@ -1,0 +1,35 @@
+.emergency-heading{
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 4vh;
+}
+
+.forward{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+.forward h3 {
+    margin-right: 2px; 
+}
+
+.back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4vh;
+    margin-left: 2vw;
+}
+
+.back h3 {
+    margin-left: 2px; 
+}
+
+.icons-top{
+  display: flex;
+  justify-content: space-between;
+}

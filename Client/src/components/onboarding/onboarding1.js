@@ -54,7 +54,7 @@ const Onboarding1 = (props) => {
         </div>
       </div>
       <center>
-        <p style={{ fontSize: 20, marginTop: 100 }}>
+        <p style={{ marginTop: 100 }}>
           Do you need specially abled features?
         </p>
       </center>
