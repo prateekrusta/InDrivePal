@@ -1,0 +1,26 @@
+.suggestion{
+    background-color: #ff6e00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 1vw;
+    color: white;
+}
+
+.para-driver{
+    margin-left: 2vw;
+}
+
+iframe{
+   height: 45vh;
+}
+
+.ride-data{
+    text-align: left;
+    background-color: #F5F5F5;
+    z-index: 10;
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+}

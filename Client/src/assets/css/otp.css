@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-.login-out{
+.otp-out{
     position: relative;
     top: 76vw;
     padding: 0 50px;
 }
 
-.login-heading{
+.otp-heading{
     font-size: 25px;
     letter-spacing: 1px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 4vh;
 }
-.flag{
+.otp-flag{
     width: 30px;
     height: 20px;
     border-radius: 5px;
 }
 
-.input-phone-number{
+.otp-input-phone-number{
     margin-bottom: 3vh;
 }
 
+<<<<<<< HEAD
 .btn-height{
     font-weight: 500;
     letter-spacing: 1px;
@@ -32,6 +33,9 @@
 }
 
 .input-phone-number input[type=tel]{
+=======
+input[type=tel]{
+>>>>>>> ba35a400afc89c9fb9074e58d3dd86d6927b755e
     font-size: 16px;
     border: none;
     border-bottom: 2px solid rgb(154, 153, 153);
@@ -45,7 +49,7 @@
     font-size: 16px;
     border: none;
     border-bottom: 2px solid rgb(154, 153, 153);
-    width: 80vw;
+    width: 70vw;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif; 
     font-weight: 500;
@@ -63,12 +67,12 @@
     outline: none;
 }
 
-.input-phone-number-left{
+.otp-input-phone-number-left{
     position: relative;
     top: 2px;
 }
 
-.input-phone-number-right{
+.otp-input-phone-number-right{
     position: relative;
 }
 
@@ -78,15 +82,6 @@
     font-family: 'Poppins', sans-serif; 
 }
 
-.disclaimer{
-    margin-top: 24vh;
-    position: relative;
-    bottom: 0;
-}
-.disclaimer p{
-    font-size: 15px;
-    color: grey;
-}
 
 .new-user-signup-message{
     font-size: 15px;

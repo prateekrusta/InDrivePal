@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 import React, {useRef} from "react";
 import ButtonSubmit from "./button-submit";
 import Grid from "@material-ui/core/Grid"
-import '../../assets/css/otp.css';
 import indianflag from '../../assets/logos/indiaflag.webp';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import "../../assets/css/emergency.css";
