@@ -6,7 +6,6 @@ import '../../assets/css/otp.css';
 import indianflag from '../../assets/logos/indiaflag.webp';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import "../../assets/css/emergency.css";
-import MyModal from '../ride/modal1';
 import uploadImage from '../../assets/images/imageUpload.png';
 
 const EmergencyAddContacts = () => {
@@ -61,8 +60,8 @@ const EmergencyAddContacts = () => {
         </div>
       <div className="btn">
       <center><ButtonSubmit label="Proceed" /></center>
-      <MyModal />
       </div>
+     
     </div>
   );
 };
