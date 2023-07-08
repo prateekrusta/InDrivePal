@@ -40,23 +40,6 @@ const Bookride = () => {
   
   const showPosition = (position) => {
 
-    const geojson = {
-      type: 'FeatureCollection',
-      features: [
-        {
-          type: 'Feature',
-          geometry: {
-            type: 'Point',
-            coordinates: [position.coords.longitud, position.coords.latitude]
-          },
-          properties: {
-            title: 'Passenger',
-            description: 'Your Current Location'
-          }
-        }
-      ]
-    };
-
     setLat(position.coords.latitude);
     setLong(position.coords.longitude);
 

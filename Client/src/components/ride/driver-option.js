@@ -4,14 +4,16 @@ import driver2 from "../../assets/images/driver2.jpg";
 import { NavLink } from "react-router-dom";
 import StarIcon from "@mui/icons-material/Star";
 
+
 const DriverOption = () => {
+
   return (
     <div className="modal-overlay-find-driver">
       <div className="driver-option">
         <div className="driver-modal">
           <img src={driver} />
           <div className="driver-content">
-            <h4>Maruti Suzuki Wagnar</h4>
+            <h4>Maruti Suzuki WagonR</h4>
             <h4 style={{ marginTop: -10 }}>Ram Sharma</h4>
             <div className="dr">
               <StarIcon style={{ color: "goldenrod" }} />
