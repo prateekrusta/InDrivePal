@@ -7,15 +7,19 @@ import passengerdriver from '../../assets/images/passenger.png';
 const PassengerDriver = () => {
   return (
     <div className="onboarding">
-    <div className="back"><ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3></div>
+    <NavLink to="/onboarding/page-6">
+    <div className="back">
+      <ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3>
+    </div>
+    </NavLink>
       <center>
-        <p style={{fontSize:40, marginTop: 30}}>Are you a passenger or a driver?</p>
+        <p style={{fontSize:25, marginTop: 30}}>Are you a passenger or a driver?</p>
         <p style={{color:"grey", fontWeight:100}}>You can change the mode later</p>
       </center>
       <center><img src={passengerdriver} /></center>
       <div className="btn">
-      <center><div className="btn-submit" style={{backgroundColor:"#F5F5F5", marginBottom:4}}><p>Passenger</p></div></center>
-      <center><ButtonSubmit label="Driver" /></center>
+      <NavLink to="/emergency"><center><div className="btn-submit" style={{backgroundColor:"#F5F5F5", marginBottom:4, border:'none', padding:'0.3vh'}}><p>Passenger</p></div></center></NavLink>
+      <NavLink to="/emergency"><center><ButtonSubmit label="Driver" /></center></NavLink>
       </div>
     </div>
   );

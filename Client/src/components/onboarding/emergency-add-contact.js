@@ -20,7 +20,7 @@ const EmergencyAddContacts = () => {
   };
   return (
     <div className="onboarding">
-    <div className="back"><ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3></div>
+    <NavLink to="/emergency"><div className="back"><ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3></div></NavLink>
       <center>
         <p className="emergency-heading">Add contact</p>
       </center>
@@ -44,21 +44,21 @@ const EmergencyAddContacts = () => {
                     </div>
                 </Grid>
             <Grid item xs={2}>
-                    <div className="input-phone-number-left" style={{marginLeft:40}}>
+                    <div className="input-phone-number-left" style={{marginLeft:55}}>
                         <img src={indianflag} className="flag"></img>
                     </div>
                 </Grid>
                 <Grid item xs={10}>
                     <div className="input-phone-number-right" style={{marginLeft:-25}}>
                         <span> +91 </span>
-                        <input type="tel" placeholder="Enter contact no." maxLength="10" minLength="10" required style={{width:'60vw'}}></input>
+                        <input type="tel" placeholder="Enter contact no." maxLength="10" minLength="10" required style={{width:'50vw'}}></input>
                     </div>
                 </Grid>
                 
             </Grid>
         </div>
       <div className="btn">
-      <center><ButtonSubmit label="Proceed" /></center>
+      <NavLink to="/emergency/list-emergency-contact"><center><ButtonSubmit label="Proceed" /></center></NavLink>
       </div>
      
     </div>

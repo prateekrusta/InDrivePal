@@ -29,11 +29,11 @@ const Login = () => {
                 </Grid>
             </Grid>
         </div>
-
+        <NavLink to="/onboarding/page-5">
         <button className="btn-submit btn-height">
         Next
         </button>
-
+        </NavLink>
         <div className="new-user-signup-message">
             <p>
                 New User? <NavLink to="/onboarding/page-1"><b>Create new account</b></NavLink>.

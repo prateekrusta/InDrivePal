@@ -25,8 +25,8 @@ const ListEmergencyContacts = () => {
   return (
     <div style={{display:'flex', flexDirection:'column'}}>
       <div className="icons-top">
-        <div className="back-icons"><ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3></div>
-        <div className="forward-icons"><h3>Skip</h3><ArrowForwardIosIcon style={{color: 'grey'}} /></div>
+        <NavLink to="/emergency/add-contact"><div className="back-icons"><ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3></div></NavLink>
+        <NavLink to="/ride"><div className="forward-icons"><h3>Skip</h3><ArrowForwardIosIcon style={{color: 'grey'}} /></div></NavLink>
       </div>
       <center>
         <p className="emergency-heading">Emergency contacts</p>
@@ -42,8 +42,8 @@ const ListEmergencyContacts = () => {
         ))}
       </div>
       <div className="btn">
-        <center><div className="btn-cc" style={{backgroundColor:"#F5F5F5", marginBottom:4}}><p>Add another contact</p></div></center>
-        <center><ButtonSubmit label="Proceed" /></center>
+      <NavLink to="/emergency/add-contact"><center><div className="btn-cc" style={{backgroundColor:"#F5F5F5", marginBottom:4}}><p>Add another contact</p></div></center></NavLink>
+      <NavLink to="/ride"><center><ButtonSubmit label="Proceed" /></center></NavLink>
       </div>
     </div>
   );

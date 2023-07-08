@@ -152,3 +152,8 @@ h3{
 .onboarding-title {
   margin-top: 100px;
 }
+
+.error-text {
+  color: red;
+  margin-top: 10px;
+}

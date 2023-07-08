@@ -4,7 +4,7 @@ import ButtonSubmit from "./button-submit";
 import locationicon from '../../assets/images/loc-check.png';
 import "../../assets/css/onboarding.css";
 
-const LocationCheck = () => {
+const Onboarding5 = () => {
   return (
     <div className="onboarding">
       <center>
@@ -21,4 +21,4 @@ const LocationCheck = () => {
   );
 };
 
-export default LocationCheck;
+export default Onboarding5;

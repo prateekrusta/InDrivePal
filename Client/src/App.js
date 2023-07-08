@@ -13,18 +13,21 @@ import Onboarding3 from './components/onboarding/onboarding3.js';
 import Onboarding4 from "./components/onboarding/phone-no.js";
 import Onboarding5 from "./components/onboarding/locationCheck.js";
 import Onboarding6 from "./components/onboarding/welcome.js";
+import PassengerDriver from "./components/onboarding/passenger-driver.js";
+
+import EmergencyContacts from "./components/onboarding/emergency.js";
+import EmergencyAddContacts from "./components/onboarding/emergency-add-contact.js";
+import ListEmergencyContacts from "./components/onboarding/list-emergency-contact.js";
+
+import Bookride from "./components/ride/book-ride.js";
 
 import Driver from './components/ride/driver.js';
 import Navbar from './components/ride/navbar.js';
-import Bookride from './components/ride/book-ride.js'
 
 import Login from './components/auth/login.js';
 import './App.css';
 import Otp from "./components/onboarding/otp.js";
-import ListEmergencyContacts from "./components/onboarding/list-emergency-contact.js";
-import EmergencyAddContacts from "./components/onboarding/emergency-add-contact.js";
 import Modal from "./components/ride/modal2.js";
-import EmergencyContacts from "./components/onboarding/emergency.js";
 import FindDriver from "./components/ride/find-driver.js";
 import DriverOption from "./components/ride/driver-option.js";
 import DriverRated from "./components/ride/driver-rated.js";
@@ -54,7 +57,16 @@ function App() {
               <Route path="otp" element={<Otp />} />
               <Route path="page-5" element={<Onboarding5 />} />
               <Route path="page-6" element={<Onboarding6 />} />
-
+              <Route path="page-7" element={<PassengerDriver />} />
+            </Route>
+            
+            <Route path="emergency">
+            <Route index path="" element={<EmergencyContacts />} />
+            <Route path="add-contact" element={<EmergencyAddContacts />} />
+            <Route path="list-emergency-contact" element={<ListEmergencyContacts />} />
+            </Route>
+            <Route path="ride">
+            <Route index path="" element={<Bookride />} />
             </Route>
           </Routes>
         </main>
