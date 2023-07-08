@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 import RootLayout from './layout/RootLayout.js';
 
+import Onboard from "./components/onboarding/onboard.js";
 import Feature1 from './components/onboarding/feature1.js';
 import Feature2 from './components/onboarding/feature2.js';
 import Feature3 from './components/onboarding/feature3.js';
@@ -34,10 +35,11 @@ import Waiting from "./components/ride/waiting.js";
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <main>
           <Routes path="/" >
-              <Route index path="/" element={<Feature1 />} />
+              <Route index path="/" element={<Onboard />} />
+              <Route path="info-1" element={<Feature1 />} />
               <Route path="info-2" element={<Feature2 />} />
               <Route path="info-3" element={<Feature3 />} />
               <Route path="info-4" element={<Feature4 />} />
@@ -57,8 +59,7 @@ function App() {
             </Route>
           </Routes>
         </main>
-      </BrowserRouter> */}
-      <Waiting />
+      </BrowserRouter>
     </div>
   );
 }
