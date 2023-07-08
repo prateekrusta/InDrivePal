@@ -2,12 +2,11 @@ import React from "react";
 import driver from "../../assets/images/driver.jpeg";
 import "../../assets/css/modal2.css";
 import ButtonSubmit from "../onboarding/button-submit";
-
 const Modal = () => {
   return (
     <div className="modal-overlay">
       <div className="modal-container">
-        <center>
+       <center>
           <h1 className="modal-heading">Cancel this ride?</h1>
         </center>
         <center>

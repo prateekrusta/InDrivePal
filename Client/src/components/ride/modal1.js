@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import { NavLink } from 'react-router-dom';
 
 const MyModal = () => {
-    const [modalOpen, setModalOpen] = useState(false);
-
-    const openModal = () => {
-        setModalOpen(true);
-    };
+    const [modalOpen, setModalOpen] = useState(true);
 
     const closeModal = () => {
         setModalOpen(false);
@@ -14,10 +11,8 @@ const MyModal = () => {
 
     return (
         <div>
-            <button onClick={openModal}>Open Modal</button>
             <Modal
                 isOpen={modalOpen}
-                onRequestClose={closeModal}
                 contentLabel="Modal"
                 style={{
                     overlay: {
@@ -30,23 +25,24 @@ const MyModal = () => {
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'space-between', // Align content at flex-end and between
-                        padding: '20px',
+                        padding: '30px',
+                        border: '4px solid #A7E92F',
                     },
                 }}
             >
                 <div>
-                    <h3 style={{ textAlign: 'left' }}>Now you pick the driver</h3>
-                    <p style={{ textAlign: 'left' }}>
+                    <h3 style={{ textAlign: 'left', fontWeight:'bold' }}>Now you pick the driver</h3>
+                    <p style={{ textAlign: 'left', }}>
                     You will be recieving offers from drivers, including offers at your fare. To proceed withthe ride, you need to accept one of the suggestions.
                     </p>
                 </div>
                 <div >
-          <p
+          <NavLink to="/ride/find-driver"><p
             style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer',display: 'flex', justifyContent: 'flex-end'  }}
             onClick={closeModal}
           >
             Close
-          </p>
+          </p></NavLink>
         </div>
             </Modal>
         </div>

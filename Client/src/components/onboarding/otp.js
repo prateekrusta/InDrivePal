@@ -32,16 +32,12 @@ const Otp = () => {
     };
   }, [isTimerRunning]);
 
-  const handlePhoneNumberChange = (event) => {
-    setPhoneNumber(event.target.value);
-  };
-
   const handleOtpChange = (event) => {
     setOtp(event.target.value);
   };
 
   const handleNextClick = () => {
-    if (phoneNumber.length === 10 && otp.length === 4) {
+    if (otp.length === 4) {
       // Perform OTP validation logic here
       navigate('/onboarding/page-5');
     } else{
@@ -55,25 +51,7 @@ const Otp = () => {
 
       <div className="otp-input-phone-number">
         <Grid container spacing={1}>
-          <Grid item xs={2}>
-            <div className="otp-input-phone-number-left">
-              <img src={indianflag} className="otp-flag" alt="Indian Flag" />
-            </div>
-          </Grid>
-          <Grid item xs={10}>
-            <div className="otp-input-phone-number-right">
-              <span>+91</span>
-              <input
-                type="tel"
-                placeholder="Enter your phone no."
-                maxLength="10"
-                minLength="10"
-                value={phoneNumber}
-                onChange={handlePhoneNumberChange}
-                required
-              />
-            </div>
-          </Grid>
+          
           <Grid item xs={10}>
             <div className="input-phone-number-right">
               <input

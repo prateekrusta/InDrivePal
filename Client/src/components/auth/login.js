@@ -29,7 +29,7 @@ const Login = () => {
                 </Grid>
             </Grid>
         </div>
-        <NavLink to="/onboarding/page-5">
+        <NavLink to="/ride">
         <button className="btn-submit btn-height">
         Next
         </button>

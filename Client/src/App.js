@@ -1,16 +1,21 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import RootLayout from './layout/RootLayout.js';
+
+import Navbar from './components/ride/navbar.js';
 
 import Feature1 from './components/onboarding/feature1.js';
 import Feature2 from './components/onboarding/feature2.js';
 import Feature3 from './components/onboarding/feature3.js';
 import Feature4 from './components/onboarding/feature4.js';
 
+import Login from './components/auth/login.js';
+
 import Onboarding1 from './components/onboarding/onboarding1.js';
 import Onboarding2 from './components/onboarding/onboarding2.js';
 import Onboarding3 from './components/onboarding/onboarding3.js';
 import Onboarding4 from "./components/onboarding/phone-no.js";
+import Otp from "./components/onboarding/otp.js";
 import Onboarding5 from "./components/onboarding/locationCheck.js";
 import Onboarding6 from "./components/onboarding/welcome.js";
 import PassengerDriver from "./components/onboarding/passenger-driver.js";
@@ -20,18 +25,14 @@ import EmergencyAddContacts from "./components/onboarding/emergency-add-contact.
 import ListEmergencyContacts from "./components/onboarding/list-emergency-contact.js";
 
 import Bookride from "./components/ride/book-ride.js";
-
-import Driver from './components/ride/driver.js';
-import Navbar from './components/ride/navbar.js';
-
-import Login from './components/auth/login.js';
-import './App.css';
-import Otp from "./components/onboarding/otp.js";
-import Modal from "./components/ride/modal2.js";
+import MyModal from "./components/ride/modal1.js";
 import FindDriver from "./components/ride/find-driver.js";
+import RatedDriver from "./components/ride/rated-drivers.js";
+
+import './App.css';
+import Modal from "./components/ride/modal2.js";
 import DriverOption from "./components/ride/driver-option.js";
 import DriverRated from "./components/ride/driver-rated.js";
-import RatedDriver from "./components/ride/rated-drivers.js";
 import Waiting from "./components/ride/waiting.js";
 
 function App() {
@@ -44,7 +45,6 @@ function App() {
               <Route path="info-2" element={<Feature2 />} />
               <Route path="info-3" element={<Feature3 />} />
               <Route path="info-4" element={<Feature4 />} />
-
             <Route path="login">
               <Route index element={<Login />} />
             </Route>
@@ -59,7 +59,7 @@ function App() {
               <Route path="page-6" element={<Onboarding6 />} />
               <Route path="page-7" element={<PassengerDriver />} />
             </Route>
-            
+
             <Route path="emergency">
             <Route index path="" element={<EmergencyContacts />} />
             <Route path="add-contact" element={<EmergencyAddContacts />} />
@@ -67,6 +67,9 @@ function App() {
             </Route>
             <Route path="ride">
             <Route index path="" element={<Bookride />} />
+            <Route path="pick-driver-suggestion" element={<MyModal />} />
+            <Route path="find-driver" element={<FindDriver />} />
+            <Route path="driver-rated" element={<RatedDriver />} />
             </Route>
           </Routes>
         </main>

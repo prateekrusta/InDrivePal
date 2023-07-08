@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import '../../assets/css/finding-drivers.css';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import '../../assets/css/buttons.css';
+import A from "../../assets/images/A.png";
+import B from "../../assets/images/B.png";
 import DriverRated from './driver-rated';
 import Driver from './driver';
 const RatedDriver = () => {
@@ -12,16 +14,15 @@ const RatedDriver = () => {
         <h3>Cancel</h3>
       </div>
       <div className='modal-overlay'>
-      <div className="modal-container">
+      <div className="modal-container" style={{height:'70vh'}}>
       <center><h3 style={{color:'black'}}>White Coloured Car</h3></center>
       <center><h3 style={{ marginTop: -15, color:'black' }}>Maruti Suzuki Wagnar</h3></center>
       <center><div className='rectangle-div'>UP14FT1121</div></center>
-
       <Driver />
         <div className="ride-data" style={{backgroundColor:"white"}}>
-        <p>THE LOTUS POND TOWER-C2</p>
-        <p style={{ marginTop: -15 }}>Ryan International School, Noida</p>
-        <p style={{ marginTop: -15 }}>₹ 180, cash</p>
+        <div style={{display:'flex', flexDirection:'row'}}><img style={{width:'10vw', height:'5vh', marginTop:'1vh', marginRight: '1vw', marginLeft:'1vw'}} src={A} /><p>THE LOTUS POND TOWER-C2</p></div>
+        <div style={{display:'flex', flexDirection:'row'}}><img style={{width:'10vw', height:'5vh', marginTop:'1vh', marginRight: '1vw', marginLeft:'1vw'}} src={B} /><p>Ryan International School, Noida</p></div>
+        <p style={{ marginTop: -5, marginLeft:'12vw' }}>₹ {fare}, cash</p>
       </div>
       <hr />
       <DriverRated name="Prateek" />
