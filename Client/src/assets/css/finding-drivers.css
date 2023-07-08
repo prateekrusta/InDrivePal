@@ -24,3 +24,96 @@ iframe{
     display: flex;
     flex-direction: column;
 }
+.driver-modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.driver-option {
+    position: relative;
+    padding-top: 1vh;
+    background-color: #ffffff;
+    margin-top: 10vh;
+    height: 25vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-right: 1vw;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .driver-option::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1vh;
+    width: 70%;
+    background-color: #A7E92F;
+  }
+  
+  .driver-option::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1vh;
+    width: 0;
+    background-color: #ff6e00;
+    transition: width 0.5s ease;
+  }
+  
+  .driver-option:hover::after {
+    width: 100%;
+  }
+
+.driver-option img{
+    width: 20vw;
+    height: 8.5vh;
+    border-radius: 50%;
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+
+.modal-overlay-find-driver {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column; 
+    z-index: 9999;
+  }
+
+  .modal-end{
+    display: flex;
+    flex-direction: column;
+    right: 0;
+  }
+
+  .driver-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .driver-content h4, .modal-end h4{
+    font-weight: 400;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .dr{
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+  }
+
+  .dr span{
+    color: grey;
+  }
