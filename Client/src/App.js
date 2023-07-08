@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 import RootLayout from './layout/RootLayout.js';
 
-import Onboard from "./components/onboarding/onboard.js";
 import Feature1 from './components/onboarding/feature1.js';
 import Feature2 from './components/onboarding/feature2.js';
 import Feature3 from './components/onboarding/feature3.js';
@@ -38,8 +37,7 @@ function App() {
       <BrowserRouter>
         <main>
           <Routes path="/" >
-              <Route index path="/" element={<Onboard />} />
-              <Route path="info-1" element={<Feature1 />} />
+              <Route index path="/" element={<Feature1 />} />
               <Route path="info-2" element={<Feature2 />} />
               <Route path="info-3" element={<Feature3 />} />
               <Route path="info-4" element={<Feature4 />} />
@@ -52,7 +50,8 @@ function App() {
               <Route index path="page-1" element={<Onboarding1 />} />
               <Route path="page-2" element={<Onboarding2 />} />
               <Route path="page-3" element={<Onboarding3 />} />
-              <Route path="page-4" element={<DriverOption />} />
+              <Route path="page-4" element={<Onboarding4 />} />
+              <Route path="otp" element={<Otp />} />
               <Route path="page-5" element={<Onboarding5 />} />
               <Route path="page-6" element={<Onboarding6 />} />
 

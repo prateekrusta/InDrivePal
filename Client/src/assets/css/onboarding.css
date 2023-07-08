@@ -135,3 +135,20 @@ h3{
   padding: 15px 0;
   margin-bottom: 1vh;
 }
+
+.onboarding-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.onboarding-loader img {
+  height: 200px; /* Set the height as desired */
+  width: 200px; /* Set the width as desired */
+  /* Add any additional styles for the loader image */
+}
+
+.onboarding-title {
+  margin-top: 100px;
+}

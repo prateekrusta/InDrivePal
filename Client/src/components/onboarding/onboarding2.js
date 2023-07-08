@@ -25,7 +25,9 @@ const Onboarding2 = () => {
     <div className="onboarding">
       <div className="icons">
         <div className="arrow-back">
+        <NavLink to="/onboarding/page-1">
           <ArrowBackIcon />
+          </NavLink>
         </div>
         <div>
         {showSoundOn && (

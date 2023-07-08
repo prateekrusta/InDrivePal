@@ -38,7 +38,9 @@ const Onboarding1 = (props) => {
     <div className="onboarding">
       <div className="icons">
         <div className="arrow-back">
+        <NavLink to="/login">
           <ArrowBackIcon />
+          </NavLink>
         </div>
         <div>
           {showSoundOn && (

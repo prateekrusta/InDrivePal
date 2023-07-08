@@ -83,3 +83,8 @@
     font-family: 'Poppins', sans-serif; 
     letter-spacing: 1px;
 }
+
+.error-text {
+    color: red;
+    margin-top: 10px;
+  }

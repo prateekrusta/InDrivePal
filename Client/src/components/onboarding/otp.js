@@ -1,39 +1,106 @@
-import Grid from "@material-ui/core/Grid"
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import Grid from '@material-ui/core/Grid';
+import { useNavigate } from 'react-router-dom';
 import '../../assets/css/otp.css';
 import indianflag from '../../assets/logos/indiaflag.webp';
 
 const Otp = () => {
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [otp, setOtp] = useState('');
+  const [showError, setShowError] = useState(false);
+  const [timer, setTimer] = useState(60);
+  const [isTimerRunning, setIsTimerRunning] = useState(true);
+  const navigate = useNavigate();
 
-    return (
-      <div className="otp-out">
-        <div className="otp-heading">
-            We sent you a code
-        </div>
+  useEffect(() => {
+    let intervalId = null;
 
-        <div className="otp-input-phone-number">
-            <Grid container spacing={1}>
-            <Grid item xs={2}>
-                    <div className="otp-input-phone-number-left">
-                        <img src={indianflag} className="otp-flag"></img>
-                    </div>
-                </Grid>
-                <Grid item xs={10}>
-                    <div className="otp-input-phone-number-right">
-                        <span> +91 </span>
-                        <input type="tel" placeholder="Enter your phone no." maxLength="10" minLength="10" required></input>
-                    </div>
-                </Grid>
-                <Grid item xs={10}>
-                    <div className="input-phone-number-right">
-                        <input type="text" maxLength="4" minLength="4" placeholder="4 digit code" required></input>
-                    </div>
-                </Grid>
-            </Grid>
-            <center> <p className="retry">Retry log in after 60 seconds</p></center>
-        </div>
-      </div>
-    );
+    if (isTimerRunning) {
+      intervalId = setInterval(() => {
+        setTimer((prevTimer) => {
+          if (prevTimer === 0) {
+            setIsTimerRunning(false);
+            clearInterval(intervalId);
+          }
+          return prevTimer === 0 ? 60 : prevTimer - 1;
+        });
+      }, 1000);
+    }
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [isTimerRunning]);
+
+  const handlePhoneNumberChange = (event) => {
+    setPhoneNumber(event.target.value);
   };
-  
-  export default Otp;
+
+  const handleOtpChange = (event) => {
+    setOtp(event.target.value);
+  };
+
+  const handleNextClick = () => {
+    if (phoneNumber.length === 10 && otp.length === 4) {
+      // Perform OTP validation logic here
+      navigate('/onboarding/page-5');
+    } else{
+        setShowError(true)
+    }
+  };
+
+  return (
+    <div className="otp-out">
+      <div className="otp-heading">We sent you a code</div>
+
+      <div className="otp-input-phone-number">
+        <Grid container spacing={1}>
+          <Grid item xs={2}>
+            <div className="otp-input-phone-number-left">
+              <img src={indianflag} className="otp-flag" alt="Indian Flag" />
+            </div>
+          </Grid>
+          <Grid item xs={10}>
+            <div className="otp-input-phone-number-right">
+              <span>+91</span>
+              <input
+                type="tel"
+                placeholder="Enter your phone no."
+                maxLength="10"
+                minLength="10"
+                value={phoneNumber}
+                onChange={handlePhoneNumberChange}
+                required
+              />
+            </div>
+          </Grid>
+          <Grid item xs={10}>
+            <div className="input-phone-number-right">
+              <input
+                type="text"
+                maxLength="4"
+                minLength="4"
+                placeholder="4 digit code"
+                value={otp}
+                onChange={handleOtpChange}
+                required
+              />
+            </div>
+          </Grid>
+        </Grid>
+        <center>
+          <p className="retry">Retry log in after {timer} seconds</p>
+        </center>
+      </div>
+      {showError && (
+        <p className="error-text">Please enter a valid 10-digit phone number.</p>
+      )}
+
+      <button className="btn-submit" style={{padding:'1vh'}} onClick={handleNextClick}>
+        Verify
+      </button>
+    </div>
+  );
+};
+
+export default Otp;

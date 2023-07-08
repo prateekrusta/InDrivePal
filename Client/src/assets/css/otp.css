@@ -90,3 +90,8 @@
     color: grey;
     font-size: 15px;
 }
+
+.error-text {
+    color: red;
+    margin-top: 10px;
+  }
