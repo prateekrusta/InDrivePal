@@ -28,11 +28,9 @@ import Bookride from "./components/ride/book-ride.js";
 import MyModal from "./components/ride/modal1.js";
 import FindDriver from "./components/ride/find-driver.js";
 import RatedDriver from "./components/ride/rated-drivers.js";
+import Modal from "./components/ride/modal2.js";
 
 import './App.css';
-import Modal from "./components/ride/modal2.js";
-import DriverOption from "./components/ride/driver-option.js";
-import DriverRated from "./components/ride/driver-rated.js";
 import Waiting from "./components/ride/waiting.js";
 
 function App() {
@@ -70,6 +68,9 @@ function App() {
             <Route path="pick-driver-suggestion" element={<MyModal />} />
             <Route path="find-driver" element={<FindDriver />} />
             <Route path="driver-rated" element={<RatedDriver />} />
+            <Route path="coming-driver" element={<Modal />} />
+            <Route path="waiting" element={<Waiting />} />
+
             </Route>
           </Routes>
         </main>

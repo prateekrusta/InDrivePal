@@ -2,5 +2,5 @@ const WaitingTime = () => {
     return(
       <div>
         
-      </div>>
+      </div>
 )}

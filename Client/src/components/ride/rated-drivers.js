@@ -5,16 +5,17 @@ import '../../assets/css/buttons.css';
 import DriverRated from './driver-rated';
 import A from "../../assets/images/A.png";
 import B from "../../assets/images/B.png";
+import { NavLink } from 'react-router-dom';
 import Driver from './driver';
 const RatedDriver = () => {
 
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'flex-end', marginRight: 10, marginTop: -2 }}>
-        <h3>Cancel</h3>
+      <NavLink to="/ride/coming-driver"><h3>Confirm</h3></NavLink>  
       </div>
-      <div className='modal-overlay'>
-      <div className="modal-container" style={{height:'102vh'}}>
+      <div>
+      <div style={{marginTop:'5vh'}}>
       <center><h3 style={{color:'black'}}>White Coloured Car</h3></center>
       <center><h3 style={{ marginTop: -15, color:'black' }}>Maruti Suzuki Wagnar</h3></center>
       <center><div className='rectangle-div'>UP14FT1121</div></center>
