@@ -31,7 +31,7 @@
     margin-bottom: 1vh;
 }
 
-input[type=tel]{
+.input-phone-number input[type=tel]{
     font-size: 16px;
     border: none;
     border-bottom: 2px solid rgb(154, 153, 153);
@@ -49,7 +49,7 @@ input[type=tel]{
     font-family: 'Poppins', sans-serif;
     }
 
-input[type=tel]:focus{
+.input-phone-number input[type=tel]:focus{
     outline: none;
 }
 
@@ -62,7 +62,7 @@ input[type=tel]:focus{
     position: relative;
 }
 
-::placeholder{
+.input-phone-number ::placeholder{
     position: relative;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif; 

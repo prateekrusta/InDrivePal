@@ -107,7 +107,7 @@ h3{
   font-size: 18px;
 }
 
-input[type=text]{
+.input-phone-number input[type=text]{
   font-size: 16px;
   border: none;
   border-bottom: 2px solid rgb(154, 153, 153);
@@ -118,11 +118,11 @@ input[type=text]{
   height: 50px;
 }
 
-input[type=text]:focus{
+.input-phone-number input[type=text]:focus{
   outline: none;
 }
 
-::placeholder{
+.input-phone-number ::placeholder{
   position: relative;
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif; 
