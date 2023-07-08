@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import AccessibleIcon from '@mui/icons-material/Accessible';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import marker from "../../assets/images/marker.png"
 import InfoIcon from '@mui/icons-material/Info';
 import MessageIcon from '@mui/icons-material/Message';
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
@@ -15,14 +16,57 @@ import ElectricRickshawIcon from '../../assets/logos/47.png';
 import '../../assets/css/book-ride.css';
 import '../../assets/css/buttons.css';
 import wheelchairppl from '../../assets/images/wheelchair-ppl.png';
+import { useEffect,useRef } from 'react';
+import Map, {Marker} from 'react-map-gl';
+
 
 const Bookride = () => {
+
   const [wheelchairFriendly, setWheelchairFriendly] = useState(false);
   const [selectedVehicle, setSelectedVehicle] = useState('vcc-1');
   const [source, setSource] = useState('');
   const [destination, setDestination] = useState('');
   const [fare, setFare] = useState('');
   const [options, setOptions] = useState('');
+
+  const[lat,setLat] = useState();
+  const[long,setLong] = useState();
+
+  const getLocation =  () => {
+    if (navigator.geolocation) {
+       navigator.geolocation.getCurrentPosition(showPosition);
+    } 
+  }
+  
+  const showPosition = (position) => {
+
+    const geojson = {
+      type: 'FeatureCollection',
+      features: [
+        {
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [position.coords.longitud, position.coords.latitude]
+          },
+          properties: {
+            title: 'Passenger',
+            description: 'Your Current Location'
+          }
+        }
+      ]
+    };
+
+    setLat(position.coords.latitude);
+    setLong(position.coords.longitude);
+
+    
+  }
+
+  useEffect(() => {
+    getLocation();
+  },[])
+
 
   const handleWheelchairToggle = () => {
     setWheelchairFriendly((prevValue) => !prevValue);
@@ -56,20 +100,32 @@ const Bookride = () => {
     moreThanPassengersText = 'Rider must bring Helmet';
   }
 
+  
+
   return (
     <div className="dashboard-out">
       <div className="navbar-main">
         {/* <Navbar /> */}
       </div>
       <div className="book-ride-outer">
-        <div className="map">
-          {!wheelchairFriendly && (
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224347.08625126898!2d76.89713958826202!3d28.5269961121412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1688749811721!5m2!1sen!2sin"
-              width="375"
-              height="812"
-            ></iframe>
-          )}
+        <div>
+        
+                  {!wheelchairFriendly && lat && long ? <Map
+                  mapboxAccessToken="pk.eyJ1IjoiYXN1ciIsImEiOiJja3Q2ZXhkYW4waHJwMm5xbHVrZnE2YjZ2In0.pQ-92peoEdKmKFJAi6DoSg"
+                  initialViewState={{
+                    longitude: long,
+                    latitude: lat,
+                    zoom: 14.5
+                  }}
+                  style={{width:400, height:400}}
+                  mapStyle="mapbox://styles/mapbox/streets-v11"
+                >
+            <Marker longitude={long} latitude={lat} anchor="bottom" >
+              <img src= {marker} />
+            </Marker>
+
+             </Map>
+           : ""}
           {wheelchairFriendly && <img src={wheelchairppl} alt="Wheelchair Image" />}
         </div>
         <div className="input-form">
