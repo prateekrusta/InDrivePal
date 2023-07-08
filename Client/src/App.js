@@ -29,6 +29,7 @@ import FindDriver from "./components/ride/find-driver.js";
 import DriverOption from "./components/ride/driver-option.js";
 import DriverRated from "./components/ride/driver-rated.js";
 import RatedDriver from "./components/ride/rated-drivers.js";
+import Waiting from "./components/ride/waiting.js";
 
 function App() {
   return (
@@ -57,7 +58,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter> */}
-      <RatedDriver />
+      <Waiting />
     </div>
   );
 }

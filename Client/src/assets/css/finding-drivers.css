@@ -126,6 +126,14 @@ iframe{
     border-radius: 5%;
   }
 
+  .waiting-driver {
+    width: 100px; /* Set the width as desired */
+    height: 200px; /* Set the height as desired */
+    background-color: white;
+    padding: 1vh;
+    border-radius: 5%;
+  }
+
 
   .modal-container {
     width: 100%;
@@ -136,4 +144,9 @@ iframe{
     overflow: auto;
     background-color: #fff;
     border-radius: 30px 30px 0 0;
+  }
+
+  .waiting iframe{
+    height: 62vh;
+    width: 100vw;
   }
