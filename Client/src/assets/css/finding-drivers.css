@@ -117,3 +117,23 @@ iframe{
   .dr span{
     color: grey;
   }
+
+  .rectangle-div {
+    width: 100px; /* Set the width as desired */
+    height: 20px; /* Set the height as desired */
+    background-color: #F5F5F5;
+    padding: 1vh;
+    border-radius: 5%;
+  }
+
+
+  .modal-container {
+    width: 100%;
+    max-height: 180vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+  }

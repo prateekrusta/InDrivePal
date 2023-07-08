@@ -29,7 +29,7 @@ const FindDriver = () => {
     <div className="ride-data">
         <p>THE LOTUS POND TOWER-C2</p>
         <p style={{ marginTop: -15 }}>Ryan International School, Noida</p>
-        <p style={{ marginTop: -15 }}>₹ {fare}</p>
+        <p style={{ marginTop: -15 }}>₹ {fare}, cash</p>
       </div>
       <h3 style={{ fontWeight: 300 }}>Current Fare</h3>
       <div style={{ display: 'flex', alignItems: 'center' }}>
