@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
+import Navbar from './navbar.js';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import AccessibleIcon from '@mui/icons-material/Accessible';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
@@ -88,10 +89,10 @@ const Bookride = () => {
   return (
     <div className="dashboard-out">
       <div className="navbar-main">
-        {/* <Navbar /> */}
+        <Navbar />
       </div>
       <div className="book-ride-outer">
-        <div>
+        <div className='map-outer'>
         
                   {!wheelchairFriendly && lat && long ? <Map
                   mapboxAccessToken="pk.eyJ1IjoiYXN1ciIsImEiOiJja3Q2ZXhkYW4waHJwMm5xbHVrZnE2YjZ2In0.pQ-92peoEdKmKFJAi6DoSg"

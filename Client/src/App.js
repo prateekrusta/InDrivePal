@@ -63,6 +63,7 @@ function App() {
             <Route path="add-contact" element={<EmergencyAddContacts />} />
             <Route path="list-emergency-contact" element={<ListEmergencyContacts />} />
             </Route>
+            
             <Route path="ride">
             <Route index path="" element={<Bookride />} />
             <Route path="pick-driver-suggestion" element={<MyModal />} />
