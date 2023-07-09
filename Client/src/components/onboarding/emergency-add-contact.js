@@ -3,7 +3,7 @@ import React, {useRef} from "react";
 import ButtonSubmit from "./button-submit";
 import Grid from "@material-ui/core/Grid"
 import indianflag from '../../assets/logos/indiaflag.webp';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import "../../assets/css/emergency.css";
 import uploadImage from '../../assets/images/imageUpload.png';
 
@@ -20,7 +20,15 @@ const EmergencyAddContacts = () => {
   };
   return (
     <div className="onboarding">
-    <NavLink to="/emergency"><div className="back"><ArrowBackIosIcon style={{color: 'grey'}} /><h3>Back</h3></div></NavLink>
+    
+    <div className="icons">
+        <div className="arrow-back">
+          <NavLink to="/emergency">
+            <ArrowBackIcon />
+          </NavLink>
+        </div>
+      </div>
+
       <center>
         <p className="emergency-heading">Add contact</p>
       </center>
@@ -42,6 +50,7 @@ const EmergencyAddContacts = () => {
                     <div className="input-phone-number-right">
                         <input type="text" placeholder="Name"></input>
                     </div>
+                    <br />
                 </Grid>
             <Grid item xs={2}>
                     <div className="input-phone-number-left" style={{marginLeft:55}}>

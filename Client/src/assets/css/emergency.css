@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 4vh;
+    margin-top: 1.5vh;
+    margin-right: 2vw;
 }
 
 .flag{
@@ -65,7 +66,7 @@
     flex-direction: row;
     align-items: center;
     margin-top: 4vh;
-    margin-left: 2vw;
+    margin-left: 5vw;
 }
 
 .back-icons h3 {
@@ -75,4 +76,20 @@
 .icons-top{
   display: flex;
   justify-content: space-between;
+}
+
+.add-em-cons{
+    color: black !important;
+}
+
+.btn-emergency{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+}
+
+.btn-emergency p{
+    color: black;
 }

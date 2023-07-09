@@ -71,7 +71,7 @@ const Otp = () => {
         </center>
       </div>
       {showError && (
-        <p className="error-text">Please enter a valid 10-digit phone number.</p>
+        <p className="error-text">Please enter the correct OTP.</p>
       )}
 
       <button className="btn-submit btn-otp" onClick={handleNextClick}>

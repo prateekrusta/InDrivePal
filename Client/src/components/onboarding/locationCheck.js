@@ -34,11 +34,11 @@ const Onboarding5 = () => {
   return (
     <div className="onboarding">
       <center>
-        <p style={{fontSize:20, marginTop: 50}}>Are you in this city?</p>
+        <p style={{fontSize:25, marginTop: 50}}>Are you in this city?</p>
       </center>
-      <center><img src={locationicon} style={{marginTop:200, width:200}} /></center>
+      <center><img src={locationicon} style={{marginTop:150, width:200}} /></center>
       <h2>{city}</h2>
-      <center><p style={{color:'#00C4FF'}}>Edit</p></center>
+      <center><p style={{color:'#00C4FF'}}>EDIT</p></center>
       <div className="btn">
         <NavLink to="/onboarding/page-6">
         <center><ButtonSubmit label="Allow" /></center>

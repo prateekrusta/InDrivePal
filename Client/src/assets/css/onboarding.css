@@ -187,4 +187,12 @@ h3{
 .error-text {
   color: red;
   margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.onboarding h2{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 30px;
 }
