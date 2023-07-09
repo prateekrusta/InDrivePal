@@ -38,13 +38,14 @@ import Waiting from "./components/ride/waiting.js";
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <main>
           <Routes path="/" >
               <Route index path="/" element={<Feature1 />} />
               <Route path="info-2" element={<Feature2 />} />
               <Route path="info-3" element={<Feature3 />} />
               <Route path="info-4" element={<Feature4 />} />
+
             <Route path="login">
               <Route index element={<Login />} />
             </Route>
@@ -75,14 +76,13 @@ function App() {
             <Route path="waiting" element={<Waiting />} />
 
             <Route path="chat">
-              <Route index path="" element={<ChatModule />} />
+            <Route index element={<ChatModule />} />
             </Route>
 
             </Route>
           </Routes>
         </main>
-      </BrowserRouter> */}
-      <ChatModule />
+      </BrowserRouter>
     </div>
   );
 }
