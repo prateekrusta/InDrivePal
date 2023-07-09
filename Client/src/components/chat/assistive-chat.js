@@ -20,6 +20,48 @@ const AssistChat = () => {
     setAnchorEl(null);
   };
 
+  const [messages, setMessages] = React.useState(null);
+  const [response, setResponse] = React.useState(null);
+
+
+  const fireGpt = async (question) => {
+
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:JSON.stringify({
+          'question':question
+      }),  
+      credentials: "include"
+      };
+
+      fetch(`http://localhost:5000/chat/driver`, requestOptions )
+      .then(async response => {
+          if(response.ok){
+              response.json().then(data => {
+                console.log(data);
+                setResponse(data.content);
+                });
+            
+           }
+          else{
+              throw response.json();
+          }
+        })
+        .catch(async (error) => {
+          const errorMessage = await error;
+     
+        })
+  }
+
+  const handleDetails = (value) => {
+    setMessages(value);
+    fireGpt(value);
+  }
+
+
+
+
   return (
     <div className="chat-outside">
     <Chatheader label="Help" />
@@ -34,12 +76,12 @@ const AssistChat = () => {
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}>
 
-          <MessageRight
-            message="What should I do in case of a medical emergency?"
+          {messages ? <MessageRight
+            message= {messages}
             photoURL=""
             displayName="Prateek"
             avatarDisp={true}
-          />
+          /> : null}
           
           </a>
 
@@ -49,11 +91,11 @@ const AssistChat = () => {
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}>
 
-          <MessageLeft
-            message="In case of extreme medical emergency, you should call an ambulance."
+          {response ?  <MessageLeft
+            message= {response}
             photoURL=""
             avatarDisp={true}
-          />
+          /> : null }
           
           </a>
 
@@ -61,7 +103,7 @@ const AssistChat = () => {
 
       </div>
     </div>
-    <TextInput />
+    <TextInput change={handleDetails} />
 
     <Menu
         className="menu-chat"

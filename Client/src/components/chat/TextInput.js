@@ -5,14 +5,19 @@ import Grid from "@material-ui/core/Grid"
 import MicIcon from '@mui/icons-material/Mic';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
-export const TextInput = () => {
+export const TextInput = ({change}) => {
 
-    function message({ change }) {
         const [message, setMessage] = useState("");
+        
         function handleChange(event) {
+
            let value = event.target.value;
            setMessage(value);
-           change(value);
+        }
+
+        const handleSubmit = (event) => {
+            event.preventDefault();
+            change(message);
         }
 
     return (
@@ -34,6 +39,4 @@ export const TextInput = () => {
         </>
     )
 }
-
-
 
