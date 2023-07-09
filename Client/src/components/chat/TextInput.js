@@ -7,20 +7,12 @@ import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 export const TextInput = () => {
 
-    function message({ change }) {
-        const [message, setMessage] = useState("");
-        function handleChange(event) {
-           let value = event.target.value;
-           setMessage(value);
-           change(value);
-        }
-
     return (
         <>
-            <form className="wrapForm" noValidate autoComplete="off" onSubmit={handleSubmit}>
+            <form className="wrapForm" noValidate autoComplete="off">
             <Grid container spacing={1}>
                 <Grid item xs={8}>
-                    <input type='text' placeholder='Type your message ...' value = {message} onChange = {handleChange}></input>
+                    <input type='text' placeholder='Type your message ...'></input>
                 </Grid>
                 <Grid item xs={2}>
                     <button className='btn-chat'><CameraAltIcon /></button> 
