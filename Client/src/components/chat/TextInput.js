@@ -6,24 +6,21 @@ import MicIcon from '@mui/icons-material/Mic';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 export const TextInput = () => {
-    const [message, setMessage]=useState("");
-    const [list, setList]=useState([]);
 
-    const handleSubmit=(e)=>{
-        e.preventDefault();
-        const messages={message}
-        if (message){
-            setList((ls)=>[...ls,messages])
-            setMessage("")
+    function message({ change }) {
+        const [message, setMessage] = useState("");
+        function handleChange(event) {
+           let value = event.target.value;
+           setMessage(value);
+           change(value);
         }
-        console.log(message)
-    }
+
     return (
         <>
             <form className="wrapForm" noValidate autoComplete="off" onSubmit={handleSubmit}>
             <Grid container spacing={1}>
                 <Grid item xs={8}>
-                    <input type='text' placeholder='Type your message ...' value={message} onChange={(e)=>setMessage(e.target.value)}></input>
+                    <input type='text' placeholder='Type your message ...' value = {message} onChange = {handleChange}></input>
                 </Grid>
                 <Grid item xs={2}>
                     <button className='btn-chat'><CameraAltIcon /></button> 
