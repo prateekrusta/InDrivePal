@@ -1,0 +1,55 @@
+input[type="checkbox"] {
+    display: none;
+  }
+  
+  .modal-overlay label {
+    display: flex;
+    align-items: center;
+    width: 120px; /* Increase the width to accommodate the text */
+    height: 36px;
+    border-radius: 20px;
+    background-color: #ea948c;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    overflow: hidden; /* Add overflow property to prevent text overflow */
+  }
+  
+  .modal-overlay label.sent {
+    background-color: #a5d6a7;
+
+  }
+  
+  #knob {
+    width: 39px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  label.sent #knob {
+    transform: translateX(84px); 
+  }
+  
+  #subscribe {
+    font-size: 14px;
+    margin: 0 8px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+  
+  label.sent #subscribe {
+    opacity: 1;
+  }
+  
+  #alright {
+    font-size: 14px;
+  }
+  

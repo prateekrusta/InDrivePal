@@ -33,6 +33,7 @@ import Modal from "./components/ride/modal2.js";
 import ChatMsg from './components/chat/ChatMsg.js';
 import AssistiveChat from './components/chat/assistive-chat.js'
 
+import SOS from "./components/ride/SOS.js"
 
 import './App.css';
 import Waiting from "./components/ride/waiting.js";
@@ -76,6 +77,8 @@ function App() {
             <Route path="driver-rated" element={<RatedDriver />} />
             <Route path="coming-driver" element={<Modal />} />
             <Route path="waiting" element={<Waiting />} />
+            <Route path="SOS" element={<SOS />} />
+
             </Route>
             
             <Route path="chat-app">
@@ -85,7 +88,7 @@ function App() {
             <Route path="assistive-chat">
             <Route index path="" element={<AssistiveChat />} />
             </Route>
-
+            
             
           </Routes>
         </main>
