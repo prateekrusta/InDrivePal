@@ -10,7 +10,7 @@ InDrive Pal is a ***ride-hailing app*** that revolutionizes ***transportation ac
 🔗 [Google Drive](https://bit.ly/indrive-pal-ppt)
 
 ## Project UI
-🔗 [Figma Link]([https://bit.ly/indrive-pal-ppt](https://www.figma.com/file/CtfxI6QH5yObtFM855XR4H/Incode?type=design&node-id=31%3A160&mode=design&t=gtZY9dqh6fw88dCm-1))
+🔗 [Figma Link](https://www.figma.com/file/CtfxI6QH5yObtFM855XR4H/Incode?type=design&node-id=31%3A160&mode=design&t=gtZY9dqh6fw88dCm-1)
 
 ## Team Incoders
 <ul>
