@@ -4,7 +4,7 @@
 
 In ```Root``` directory
 ```
-run -> npm I
+run -> npm install
 
 (In case Of Peer Dependency Issues In Material UI )
 run -> npm i --legacy-peer-deps
@@ -18,7 +18,7 @@ In ```/client``` Directory
 - run -> npm start
 ```
 
-<b> Configure Environment Variables (Structure Of .env File) : </b>
+<b> Configure Environment Variables (Structure Of .env File): </b>
 
 ```
 PORT = 5000
@@ -50,18 +50,4 @@ InDrive Pal is a ***ride-hailing app*** that revolutionizes ***transportation ac
   <li>Siya Sindhani</li>
   <li>Kush Gupta</li>
 </ul>
-
-## Steps to run the code
-
-### Inside Root Directory
-```
-run -> npm i
-run -> npm start
-```
-
-### Inside Client Folder
-```
-run -> npm i
-run -> npm start
-```
 
