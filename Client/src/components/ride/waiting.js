@@ -38,7 +38,7 @@ const Waiting = () => {
     </div>
     <div>
     <center><h3 style={{color:'black'}}>White Coloured Car</h3></center>
-      <center><h3 style={{ marginTop: -15, color:'black' }}>Maruti Suzuki Wagnar</h3></center>
+      <center><h3 style={{ marginTop: -15, color:'black' }}>Maruti Suzuki Ritz</h3></center>
       <center><div className='rectangle-div'>UP14FT1121</div></center>
 
     </div>

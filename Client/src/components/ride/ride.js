@@ -16,7 +16,7 @@ const RatedDriver = () => {
       <div className='modal-overlay'>
       <div className="modal-container" style={{height:'70vh'}}>
       <center><h3 style={{color:'black'}}>White Coloured Car</h3></center>
-      <center><h3 style={{ marginTop: -15, color:'black' }}>Maruti Suzuki WagonR</h3></center>
+      <center><h3 style={{ marginTop: -15, color:'black' }}>Maruti Suzuki Ritz</h3></center>
       <center><div className='rectangle-div'>UP14FT1121</div></center>
       <Driver />
         <div className="ride-data" style={{backgroundColor:"white"}}>
