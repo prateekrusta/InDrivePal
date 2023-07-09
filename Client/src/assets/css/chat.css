@@ -81,3 +81,9 @@
     overflow-y: scroll;
     padding: 100px 0;
 }
+
+.menu-chat{
+    position: relative;
+    top: -5px !important;
+    left: 80px !important;
+}
