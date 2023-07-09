@@ -1,5 +1,34 @@
 # InDrivePal
 
+## Instructions To Set Up Application
+
+In ```Root``` directory
+```
+run -> npm I
+
+(In case Of Peer Dependency Issues In Material UI )
+run -> npm i --legacy-peer-deps
+
+run -> npm start
+```
+
+In ```/client``` Directory
+```
+- run -> npm i
+- run -> npm start
+```
+
+<b> Configure Environment Variables (Structure Of .env File) : </b>
+
+```
+PORT = 5000
+CONNECTION_URI = < MONGODB URI >
+SMS_KEY = < 2-Factor.in SMS API KEY >
+SECRET_KEY = JWT_SECRET_KEY_
+CLIENT_URL = http://localhost:3000 //React URL
+OPENAI_API_KEY = < OPEN API KEY >
+```
+
 ## About the Project
 InDrive Pal is a ***ride-hailing app*** that revolutionizes ***transportation accessibility for people with disabilities***. Disabled people face many significant barriers while accessing comfortable and convenient rides, such as booking and taking cab rides, including limited accessibility, insufficient vehicle information, driver disability awareness, communication barriers, inadequate pick-up/drop-off locations, unreliable service availability, and the absence of trip assistance. InDrive Pal addresses these challenges, which are essential for promoting inclusive and empowering transportation experiences for people with disabilities. InDrive Pal includes features like ***voice callouts***, ***wheel-chair friendly places*** en-route and ***text-to-speech*** functionality for larger range of disabilities like ***visually impaired***, ***deaf***, ***mute***, ***neurodegetrative disease*** & ***locomotor***. 
 
