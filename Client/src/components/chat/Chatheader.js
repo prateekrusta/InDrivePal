@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid"
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
-const Chatheader = () => {
+const Chatheader = (props) => {
 
     return (
       <div className="chat-header">
@@ -16,7 +16,7 @@ const Chatheader = () => {
                     <AccountCircleIcon className='chat-header-avatar' />
                 </Grid>
                 <Grid item xs={8}>
-                    <span className='chat-header-name'>Prateek Rustagi</span>
+                    <span className='chat-header-name'>{props.label}</span>
                 </Grid>
             </Grid>
       </div>

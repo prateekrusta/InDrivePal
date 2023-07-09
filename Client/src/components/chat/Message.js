@@ -117,18 +117,15 @@ export const MessageLeft = (props) => {
   const message = props.message ? props.message : "no message";
   const timestamp = props.timestamp ? props.timestamp : "";
   const photoURL = props.photoURL ? props.photoURL : "dummy.js";
-  const displayName = props.displayName ? props.displayName : "Admin";
   const classes = useStyles();
   return (
     <>
       <div className={classes.messageRow}>
         <Avatar
-          alt={displayName}
           className={classes.orange}
           src={photoURL}
         ></Avatar>
         <div>
-          <div className={classes.displayName}>{displayName}</div>
           <div className={classes.messageBlue}>
             <div>
               <p className={classes.messageContent}>{message}</p>

@@ -9,7 +9,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
 
-const ChatMsg = () => {
+const AssistChat = () => {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -22,7 +22,7 @@ const ChatMsg = () => {
 
   return (
     <div className="chat-outside">
-    <Chatheader label="Prateek Rustagi" />
+    <Chatheader label="Help" />
     <div className="container">
       <div className="paper" zDepth={2}>
 
@@ -34,9 +34,10 @@ const ChatMsg = () => {
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}>
 
-          <MessageLeft
-            message="Hey Hey Hey Hey HeyHey Hey Hey Hey HeyHey Hey Hey Hey HeyHey Hey Hey Hey Hey"
+          <MessageRight
+            message="What should I do in case of a medical emergency?"
             photoURL=""
+            displayName="Prateek"
             avatarDisp={true}
           />
           
@@ -49,21 +50,12 @@ const ChatMsg = () => {
           onClick={handleClick}>
 
           <MessageLeft
-            message="Hey"
+            message="In case of extreme medical emergency, you should call an ambulance."
             photoURL=""
             avatarDisp={true}
           />
           
           </a>
-
-          <MessageRight
-            message="Hey"
-            photoURL=""
-            avatarDisp={true}
-            timestamp="11:00 A.M."
-          />
-
-
 
         </div>
 
@@ -91,4 +83,4 @@ const ChatMsg = () => {
   );
 }
 
-export default ChatMsg
+export default AssistChat

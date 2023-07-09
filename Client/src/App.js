@@ -31,6 +31,7 @@ import RatedDriver from "./components/ride/rated-drivers.js";
 import Modal from "./components/ride/modal2.js";
 
 import ChatMsg from './components/chat/ChatMsg.js';
+import AssistiveChat from './components/chat/assistive-chat.js'
 
 import './App.css';
 import Waiting from "./components/ride/waiting.js";
@@ -78,6 +79,10 @@ function App() {
             
             <Route path="chat-app">
             <Route index path="" element={<ChatMsg />} />
+            </Route>
+
+            <Route path="assistive-chat">
+            <Route index path="" element={<AssistiveChat />} />
             </Route>
 
             
