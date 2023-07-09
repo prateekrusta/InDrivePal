@@ -7,4 +7,4 @@ InDrive Pal is a ***ride-hailing app*** that revolutionizes ***transportation ac
 🔗 [YouTube Video](https://www.google.co)
 
 ## Powerpoint Presentation
-🔗 [Google Drive Link](https://bit.ly/indrive-pal-ppt)
+🔗 [Google Drive](https://bit.ly/indrive-pal-ppt)
