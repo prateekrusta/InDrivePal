@@ -8,3 +8,5 @@ const WaitingTime = () => {
        <h3 style={{fontWeight:100, color: 'grey'}}>Almost there!</h3>
       </div>
 )}
+
+export default WaitingTime

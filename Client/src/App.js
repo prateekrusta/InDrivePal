@@ -30,7 +30,7 @@ import FindDriver from "./components/ride/find-driver.js";
 import RatedDriver from "./components/ride/rated-drivers.js";
 import Modal from "./components/ride/modal2.js";
 
-import ChatModule from './components/chat/ChatMsg.js';
+import ChatMsg from './components/chat/ChatMsg.js';
 
 import './App.css';
 import Waiting from "./components/ride/waiting.js";
@@ -74,12 +74,13 @@ function App() {
             <Route path="driver-rated" element={<RatedDriver />} />
             <Route path="coming-driver" element={<Modal />} />
             <Route path="waiting" element={<Waiting />} />
-
-            <Route path="chat">
-            <Route index element={<ChatModule />} />
+            </Route>
+            
+            <Route path="chat-app">
+            <Route index path="" element={<ChatMsg />} />
             </Route>
 
-            </Route>
+            
           </Routes>
         </main>
       </BrowserRouter>

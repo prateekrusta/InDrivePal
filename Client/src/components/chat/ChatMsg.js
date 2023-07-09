@@ -9,7 +9,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
 
-export default function ChatMsg() {
+const ChatMsg = () => {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -210,3 +210,5 @@ export default function ChatMsg() {
     </div>
   );
 }
+
+export default ChatMsg

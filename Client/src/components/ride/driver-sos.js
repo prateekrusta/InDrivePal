@@ -3,6 +3,7 @@ import driver from "../../assets/images/driver.jpeg"
 import StarIcon from '@mui/icons-material/Star';
 import MessageIcon from '@mui/icons-material/Message';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import {NavLink} from "react-router-dom";
 const DriverSOS = () => {
   return (
     <div className="driver">
@@ -13,7 +14,7 @@ const DriverSOS = () => {
      </div>
     <div className="driver-icon">
         <div className="icon" style={{backgroundColor:'red'}}><h3 style={{color:'white'}}>SOS</h3></div>
-        <div className="icon"><MessageIcon /></div>
+        <NavLink to="/chat-app"><div className="icon"><MessageIcon /></div></NavLink>
         <div className="icon"><LocalPhoneIcon /></div>
     </div>
     </div>
