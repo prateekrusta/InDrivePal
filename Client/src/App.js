@@ -30,13 +30,15 @@ import FindDriver from "./components/ride/find-driver.js";
 import RatedDriver from "./components/ride/rated-drivers.js";
 import Modal from "./components/ride/modal2.js";
 
+import ChatModule from './components/chat/ChatMsg.js';
+
 import './App.css';
 import Waiting from "./components/ride/waiting.js";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <main>
           <Routes path="/" >
               <Route index path="/" element={<Feature1 />} />
@@ -63,7 +65,7 @@ function App() {
             <Route path="add-contact" element={<EmergencyAddContacts />} />
             <Route path="list-emergency-contact" element={<ListEmergencyContacts />} />
             </Route>
-            
+
             <Route path="ride">
             <Route index path="" element={<Bookride />} />
             <Route path="pick-driver-suggestion" element={<MyModal />} />
@@ -72,10 +74,15 @@ function App() {
             <Route path="coming-driver" element={<Modal />} />
             <Route path="waiting" element={<Waiting />} />
 
+            <Route path="chat">
+              <Route index path="" element={<ChatModule />} />
+            </Route>
+
             </Route>
           </Routes>
         </main>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <ChatModule />
     </div>
   );
 }

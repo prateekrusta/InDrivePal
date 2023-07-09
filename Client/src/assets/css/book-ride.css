@@ -143,4 +143,5 @@ background-color: #e2f4ff;
 .map-outer{
     position: absolute;
     top: 0;
+    background-size: contain;
 }
