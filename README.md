@@ -8,3 +8,13 @@ InDrive Pal is a ***ride-hailing app*** that revolutionizes ***transportation ac
 
 ## Powerpoint Presentation
 🔗 [Google Drive](https://bit.ly/indrive-pal-ppt)
+
+## Team Incoders
+<ul>
+  <li>Shivam Dargan</li>
+  <li>Aarushi Abrol</li>
+  <li>Prateek Rustagi</li>
+  <li>Omisha Gupta</li>
+  <li>Siya Sindhani</li>
+  <li>Kush Gupta</li>
+</ul>
