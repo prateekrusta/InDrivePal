@@ -10,7 +10,7 @@ const MyModal = () => {
     };
 
     return (
-        <div>
+        <div className=''>
             <Modal
                 isOpen={modalOpen}
                 contentLabel="Modal"
@@ -26,7 +26,6 @@ const MyModal = () => {
                         flexDirection: 'column',
                         justifyContent: 'space-between', // Align content at flex-end and between
                         padding: '30px',
-                        border: '4px solid #A7E92F',
                     },
                 }}
             >
@@ -37,12 +36,12 @@ const MyModal = () => {
                     </p>
                 </div>
                 <div >
-          <NavLink to="/ride/find-driver"><p
-            style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer',display: 'flex', justifyContent: 'flex-end'  }}
-            onClick={closeModal}
-          >
-            Close
-          </p></NavLink>
+        <NavLink to="/ride/find-driver" className="no-underline">
+            <p className='modal1-p' style={{ color: 'black', cursor: 'pointer',display: 'flex', justifyContent: 'flex-end'  }}
+            onClick={closeModal}>
+                Close
+            </p>
+        </NavLink>
         </div>
             </Modal>
         </div>

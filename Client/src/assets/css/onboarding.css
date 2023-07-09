@@ -74,19 +74,19 @@ h3{
 }
 
 .bi-1{
-  top: 16vh;
+  top: 14vh !important;
 }
 
 .bi-2{
-  top: 17vh;
+  top: 9vh;
 }
 
 .bi-3{
-  top: 17vh;
+  top: 9vh;
 }
 
 .bi-4{
-  top: 19.5vh;
+  top: 12.5vh;
 }
 
 .no-underline{
