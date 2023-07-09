@@ -111,7 +111,7 @@ export default function PersistentDrawerLeft() {
                         </Grid>
                         <Grid item xs={9}>
                             <div className='main-name'>
-                                Siya Sindhani
+                                Shivam Dargan
                             </div>
                             <div className='name-title'>
                                 Newbie

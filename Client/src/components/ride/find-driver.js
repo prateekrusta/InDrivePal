@@ -23,7 +23,7 @@ const FindDriver = () => {
   return (
     <div>
        <NavLink to="/ride"><div style={{ display: 'flex', justifyContent: 'flex-end', marginRight: 10, marginTop: -2 }}>
-        <h3>Cancel</h3>
+        <h3 style={{"textDecoration":"none"}}>Cancel</h3>
       </div></NavLink>
       <div><div className="suggestion">
         <div>

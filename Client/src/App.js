@@ -33,6 +33,7 @@ import Modal from "./components/ride/modal2.js";
 import ChatMsg from './components/chat/ChatMsg.js';
 import AssistiveChat from './components/chat/assistive-chat.js'
 
+
 import './App.css';
 import Waiting from "./components/ride/waiting.js";
 

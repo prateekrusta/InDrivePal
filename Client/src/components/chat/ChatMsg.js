@@ -7,6 +7,7 @@ import '../../assets/css/chat.css'
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import ramSharma from "../../assets/images/driver.jpeg"
 
 
 const ChatMsg = () => {
@@ -22,7 +23,7 @@ const ChatMsg = () => {
 
   return (
     <div className="chat-outside">
-    <Chatheader label="Prateek Rustagi" />
+    <Chatheader label="Ram Sharma" />
     <div className="container">
       <div className="paper" zDepth={2}>
 
@@ -35,9 +36,10 @@ const ChatMsg = () => {
           onClick={handleClick}>
 
           <MessageLeft
-            message="Hey Hey Hey Hey HeyHey Hey Hey Hey HeyHey Hey Hey Hey HeyHey Hey Hey Hey Hey"
-            photoURL=""
+            message="Sir, I have reached the given Location."
+            photoURL={ramSharma}
             avatarDisp={true}
+            timestamp="10:00 A.M."
           />
           
           </a>
@@ -49,18 +51,19 @@ const ChatMsg = () => {
           onClick={handleClick}>
 
           <MessageLeft
-            message="Hey"
-            photoURL=""
+            message="Please Come Quickly. "
+            photoURL={ramSharma}
             avatarDisp={true}
+            timestamp="10:00 A.M."
           />
           
           </a>
 
           <MessageRight
-            message="Hey"
+            message="I will be there in 10 mins "
             photoURL=""
             avatarDisp={true}
-            timestamp="11:00 A.M."
+            timestamp="10:10 A.M."
           />
 
 

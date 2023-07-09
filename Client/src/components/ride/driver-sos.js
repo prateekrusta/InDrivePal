@@ -9,7 +9,7 @@ const DriverSOS = () => {
     <div className="driver">
      <img src={driver} />
      <div className="driver-data">
-        <h3>Rahul</h3>
+        <h3>Ram</h3>
         <div className="rating"><div style={{marginLeft: 4}}><StarIcon /></div><h4>4.9</h4></div>
      </div>
     <div className="driver-icon">

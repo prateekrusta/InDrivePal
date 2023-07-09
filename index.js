@@ -13,7 +13,7 @@ require("./database/dbConfig");
 
 
 const userRoutes = require("./routes/user")
-// const productRoutes = require ('./routes/product')
+const chatRoutes = require ('./routes/chat')
 
 
 
@@ -37,7 +37,7 @@ app.listen(process.env.PORT || 5000,()=>{
 })
 
 app.use(userRoutes);
-// app.use(productRoutes);
+app.use(chatRoutes);
 
 
 // Production Setup _ Deployment
