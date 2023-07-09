@@ -95,3 +95,20 @@
     color: red;
     margin-top: 10px;
   }
+
+  .otp-input-phone-number input[type=number]{
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(154, 153, 153);
+    width: 75vw;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    height: 40px;
+    position: relative;
+    left: -10px;
+}
+
+.otp-input-phone-number [type=number]:focus{
+    outline: none;
+}

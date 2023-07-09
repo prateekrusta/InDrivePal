@@ -55,7 +55,7 @@ const Otp = () => {
           <Grid item xs={12}>
             <div className="input-phone-number-right">
               <input
-                type="text"
+                type="number"
                 maxLength="4"
                 minLength="4"
                 placeholder="4 digit code"
@@ -74,7 +74,7 @@ const Otp = () => {
         <p className="error-text">Please enter a valid 10-digit phone number.</p>
       )}
 
-      <button className="btn-submit" style={{padding:'2vh'}} onClick={handleNextClick}>
+      <button className="btn-submit btn-otp" onClick={handleNextClick}>
         Verify
       </button>
     </div>
