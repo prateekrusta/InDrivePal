@@ -29,7 +29,7 @@ const Onboarding2 = () => {
           <ArrowBackIcon />
           </NavLink>
         </div>
-        <div>
+        <div className='sound-icon'>
         {showSoundOn && (
           <div onClick={handleSoundOn} className="volume-icon">
             <VolumeMuteIcon />
@@ -51,7 +51,7 @@ const Onboarding2 = () => {
         <ButtonChoice label="Locomotor Disability" />
       </div>
       <div className="btn">
-        <NavLink to="/onboarding/page-3">
+        <NavLink to="/onboarding/page-3" className="no-underline">
           <center><ButtonSubmit label="Proceed with your PAL" /></center>
         </NavLink>
       </div>

@@ -21,13 +21,10 @@ const Feature4 = () => {
         </p>
         <img src={feature4} />
       </center>
-      <div
-        className="base-icons"
-        style={{ display: "flex", alignItems: "center" }}
-      >
-        <NavLink to="/login"><h3 style={{marginLeft:10}}>Skip</h3></NavLink>
-        <div className="circle">
-          <NavLink to="/login"><ArrowForwardIosIcon className="arrow-icon" /></NavLink>
+      <div className="base-icons bi-4" style={{ display: 'flex', alignItems: 'center' }}>
+        <NavLink to="/login" className="no-underline"><h3 style={{marginLeft:20}}>SKIP</h3></NavLink>
+        <div className="circle" style={{marginRight:25}}>
+        <NavLink to="/login"><ArrowForwardIosIcon className="arrow-icon" /></NavLink>
         </div>
       </div>
     </div>

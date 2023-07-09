@@ -11,9 +11,9 @@ const Feature1 = () => {
         <p style={{ fontWeight: 200, marginLeft:30, marginRight:30, marginBottom:100}}>Put forward your own taxi fair. Get the best prices!</p>
         <img src={feature1} />
       </center>
-      <div className="base-icons" style={{ display: 'flex', alignItems: 'center' }}>
-        <NavLink to="/login"><h3 style={{marginLeft:10}}>Skip</h3></NavLink>
-        <div className="circle">
+      <div className="base-icons bi-1" style={{ display: 'flex', alignItems: 'center' }}>
+        <NavLink to="/login" className="no-underline"><h3 style={{marginLeft:20}}>SKIP</h3></NavLink>
+        <div className="circle" style={{marginRight:25}}>
         <NavLink to="/info-2"><ArrowForwardIosIcon className="arrow-icon" /></NavLink>
         </div>
       </div>

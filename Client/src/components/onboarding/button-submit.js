@@ -1,9 +1,10 @@
 import "../../assets/css/buttons.css";
+import "../../assets/css/onboarding.css";
 const ButtonSubmit = (props) => {
   return (
     <center>
       <div className="btn-submit">
-        <p>{props.label}</p>
+        <p className="no-underline">{props.label}</p>
       </div>
     </center>
   );

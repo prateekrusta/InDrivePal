@@ -29,7 +29,7 @@ const Onboarding3 = () => {
           <ArrowBackIcon />
           </NavLink>
         </div>
-        <div>
+        <div className='sound-icon'>
         {showSoundOn && (
           <div onClick={handleSoundOn} className="volume-icon">
             <VolumeMuteIcon />
@@ -50,7 +50,7 @@ const Onboarding3 = () => {
       <p style={{fontSize:14}} className="content3">This information will be used for fraud prevention and data analysis.</p>
       </center>
       <div className="btn">
-        <NavLink to="/onboarding/page-4">
+        <NavLink to="/onboarding/page-4" className="no-underline">
           <center><ButtonSubmit label="Allow" /></center>
         </NavLink>
       </div>

@@ -4,7 +4,9 @@
   color: black;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none !important;
 }
 
 .onboarding {
@@ -22,6 +24,11 @@
 .arrow-back {
   margin-left: 5vw;
   align-self: flex-start;
+}
+
+.sound-icon{
+  position: relative;
+  left: -8px;
 }
 
 .volume-icon {
@@ -60,10 +67,34 @@ h3{
 }
 
 .base-icons{
-  margin-top: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+}
+
+.bi-1{
+  top: 16vh;
+}
+
+.bi-2{
+  top: 17vh;
+}
+
+.bi-3{
+  top: 17vh;
+}
+
+.bi-4{
+  top: 19.5vh;
+}
+
+.no-underline{
+  text-decoration: none;
+}
+
+.no-underline h3{
+  color: black;
 }
 
 .circle {

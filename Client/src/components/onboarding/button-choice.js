@@ -1,4 +1,5 @@
 import "../../assets/css/buttons.css";
+import "../../assets/css/onboarding.css";
 import Checkbox from "@mui/material/Checkbox";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -17,7 +18,7 @@ const ButtonChoice = (props) => {
             },
           }}
         />
-        <p style={{fontWeight: 200}}>{props.label}</p>
+        <p className="no-underline" style={{fontWeight: 200}}>{props.label}</p>
       </div>
     </center>
   );

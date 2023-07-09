@@ -42,7 +42,7 @@ const Onboarding1 = (props) => {
           <ArrowBackIcon />
           </NavLink>
         </div>
-        <div>
+        <div className='sound-icon'>
           {showSoundOn && (
             <div onClick={handleSoundOn} className="volume-icon">
               <VolumeMuteIcon />
@@ -89,7 +89,7 @@ const Onboarding1 = (props) => {
         </div>
       </center>
       <div className="btn">
-        <NavLink to="/onboarding/page-2">
+        <NavLink to="/onboarding/page-2" className="no-underline">
           <center>
             <ButtonSubmit label="Proceed" />
           </center>
