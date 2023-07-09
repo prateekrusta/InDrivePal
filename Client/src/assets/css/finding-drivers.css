@@ -95,6 +95,8 @@ iframe{
     display: flex;
     flex-direction: column;
     right: 0;
+    position: relative;
+    left: -10px;
   }
 
   .driver-content{

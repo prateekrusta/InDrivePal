@@ -35,3 +35,12 @@
     left: -10px;
     top: 10px;
 }
+
+.modal1-outer{
+    overflow-y: hidden;
+}
+
+.modal1-p{
+    position: relative;
+    top: -20px;
+}

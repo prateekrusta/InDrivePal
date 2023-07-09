@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { NavLink } from 'react-router-dom';
+import '../../assets/css/buttons.css';
 
 const MyModal = () => {
     const [modalOpen, setModalOpen] = useState(true);
@@ -10,7 +11,7 @@ const MyModal = () => {
     };
 
     return (
-        <div className=''>
+        <div className='modal1-outer'>
             <Modal
                 isOpen={modalOpen}
                 contentLabel="Modal"
@@ -26,6 +27,7 @@ const MyModal = () => {
                         flexDirection: 'column',
                         justifyContent: 'space-between', // Align content at flex-end and between
                         padding: '30px',
+                        overflowY: 'hidden',
                     },
                 }}
             >

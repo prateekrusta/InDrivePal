@@ -13,7 +13,7 @@ const DriverOption = () => {
         <div className="driver-modal">
           <img src={driver} />
           <div className="driver-content">
-            <h4>Maruti Suzuki WagonR</h4>
+            <h4>Maruti Suzuki Ritz </h4>
             <h4 style={{ marginTop: -10 }}>Ram Sharma</h4>
             <div className="dr">
               <StarIcon style={{ color: "goldenrod" }} />
