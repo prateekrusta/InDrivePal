@@ -24,13 +24,13 @@ InDrive Pal is a ***ride-hailing app*** that revolutionizes ***transportation ac
 
 ## Steps to run the code
 
-### In root directory
+### Inside Root Directory
 ```
 run -> npm i
 run -> npm start
 ```
 
-### Go inside Client Folder
+### Inside Client Folder
 ```
 run -> npm i
 run -> npm start
