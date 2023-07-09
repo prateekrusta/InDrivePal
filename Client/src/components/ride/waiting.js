@@ -4,6 +4,7 @@ import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import '../../assets/css/buttons.css';
 import DriverSOS from './driver-sos';
 import {NavLink} from "react-router-dom";
+import WaitingTime from './ride-waiting-time';
 
 const Waiting = () => {
   return (

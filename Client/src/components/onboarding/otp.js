@@ -47,12 +47,12 @@ const Otp = () => {
 
   return (
     <div className="otp-out">
-      <div className="otp-heading">We sent you a code</div>
+      <center><div className="otp-heading">We sent you a code</div></center>
 
       <div className="otp-input-phone-number">
         <Grid container spacing={1}>
           
-          <Grid item xs={10}>
+          <Grid item xs={12}>
             <div className="input-phone-number-right">
               <input
                 type="text"
@@ -74,7 +74,7 @@ const Otp = () => {
         <p className="error-text">Please enter a valid 10-digit phone number.</p>
       )}
 
-      <button className="btn-submit" style={{padding:'1vh'}} onClick={handleNextClick}>
+      <button className="btn-submit" style={{padding:'2vh'}} onClick={handleNextClick}>
         Verify
       </button>
     </div>

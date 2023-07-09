@@ -8,11 +8,13 @@
     text-align: left;
     display: flex;
     flex-direction: row;
+    text-decoration: none;
 }
 .btn-submit{
     position: relative;
     top: -10px;
     border-radius: 1em;
+    text-decoration: none;
     border: 1.015px solid rgba(167, 233, 47, 0.70);
     background-color: #A7E92F;
     width: 80vw;
@@ -20,6 +22,7 @@
 .btn-cc{
     margin-top: 2px;
     margin-bottom: 2px;
+    text-decoration: none;
     padding: 1vw;
     border-radius: 1em;
     width: 80vw;   
