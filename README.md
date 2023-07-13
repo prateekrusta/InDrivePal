@@ -5,16 +5,16 @@
 In ```Root``` directory
 ```
 run -> npm install
-
-(In case Of Peer Dependency Issues In Material UI )
-run -> npm i --legacy-peer-deps
-
 run -> npm start
 ```
 
 In ```/client``` Directory
 ```
-- run -> npm i
+- run -> npm install
+
+(In case Of Peer Dependency Issues In Material UI )
+- run -> npm i --legacy-peer-deps
+
 - run -> npm start
 ```
 
@@ -29,8 +29,11 @@ CLIENT_URL = http://localhost:3000 //React URL
 OPENAI_API_KEY = < OPEN API KEY >
 ```
 
+## Instructions To Run The Application
+<b>Please Run The Application In The Mobile Responsive View To Best View The Application (Preferably On iPhone X)</b>
+
 ## About the Project
-InDrive Pal is a ***ride-hailing app*** that revolutionizes ***transportation accessibility for people with disabilities***. Disabled people face many significant barriers while accessing comfortable and convenient rides, such as booking and taking cab rides, including limited accessibility, insufficient vehicle information, driver disability awareness, communication barriers, inadequate pick-up/drop-off locations, unreliable service availability, and the absence of trip assistance. InDrive Pal addresses these challenges, which are essential for promoting inclusive and empowering transportation experiences for people with disabilities. InDrive Pal includes features like ***voice callouts***, ***wheel-chair friendly places*** en-route and ***text-to-speech*** functionality for larger range of disabilities like ***visually impaired***, ***deaf***, ***mute***, ***neurodegetrative disease*** & ***locomotor***. 
+InDrive Pal is a ***ride-hailing app*** that revolutionizes ***transportation accessibility for people with disabilities***. Disabled people face many significant barriers while accessing comfortable and convenient rides, such as booking and taking cab rides, including limited accessibility, insufficient vehicle information, driver disability awareness, communication barriers, inadequate pick-up/drop-off locations, unreliable service availability, and the absence of trip assistance. InDrive Pal addresses these challenges, which are essential for promoting inclusive and empowering transportation experiences for people with disabilities. InDrive Pal includes features like ***voice callouts***, ***wheel-chair friendly places*** en-route, and ***text-to-speech*** functionality for larger range of disabilities like ***visually impaired***, ***deaf***, ***mute***, *** neurodegenerative disease*** & ***locomotor***. 
 
 ## Project Walkthrough
 🔗 [Youtube Demo Video](https://www.youtube.com/watch?v=Ca9xoW9EU7w)
